@@ -1,0 +1,73 @@
+.content {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Helvetica, sans-serif;
+}
+ul.menu {
+    color: #1E367D;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+ul.menu li {
+    display: inline;
+}
+.top {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #505B7D;
+    padding: 16px;
+}
+
+.body {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #8193C9;
+    padding: 16px;
+    float:left;
+}
+
+.body img {
+    display: block;
+    float: right;
+}
+.job {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #8193C9;
+    padding: 16px;
+}
+.edu {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #C9C9C9;
+    padding: 16px;
+}
+#ice {
+    margin-top: 25px;
+    background: url("Images/Iceland.jpg") no-repeat;
+    width:100%;
+    height: 300px;
+    }
+#secession {
+    margin-top: 25px;
+    background: url("Images/Secession1.jpg") no-repeat;
+    width: 100%;
+    height: 300px;
+}
+.project-text {
+    color: #ffffff;
+    font-size: 24px;
+    padding: 40px;
+}
