@@ -14,10 +14,11 @@ html {
   background-image: url("../images/lapin_comic_bg.jpg");
   background-size: contain;
   width: 100%;
-  padding-bottom: 59%;
+  padding-bottom: 50.5%;
   height: 0;
   background-repeat: no-repeat;
   position: relative;
+  box-sizing: border-box;
 }
 
 .main-content {
@@ -128,5 +129,84 @@ html {
   &:hover {
     background-color: $brownDark;
     color: $beigeDark;
+  }
+}
+
+nav {
+  height: 5rem;
+  background-color: white;
+  ul {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    li {
+      width: 20%;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1rem;
+      box-sizing: border-box;
+      padding: 2rem;
+      z-index: 1000;
+      a {
+        text-decoration: none;
+        color: $grayBrown;
+        &:hover {
+          color: $deepRed;
+        }
+      }
+    }
+  }
+}
+
+#about-me {
+  background-image: url("../images/threea.jpg");
+  background-size: contain;
+  width: 100%;
+  padding-bottom: 50.5%;
+  height: 0;
+  background-repeat: no-repeat;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.intro {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  border: 5px dashed $brownDark;
+  border-radius: 2rem;
+  width: 50%;
+  position: relative;
+  left: 47%;
+  top: 7rem;
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    margin: 1rem 0;
   }
 }
