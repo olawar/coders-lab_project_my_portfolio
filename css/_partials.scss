@@ -44,6 +44,7 @@ html {
 }
 
 .about-circle {
+  display: block;
   width: 6rem;
   height: 6rem;
   border-radius: 3rem;
@@ -51,24 +52,21 @@ html {
   background-color: $grayBrown;
   color: $beigeLight;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2.5rem 0;
   font-size: 1rem;
   position: relative;
   left: 9%;
   z-index: 1;
+  text-decoration: none;
   &:hover {
     background-color: $brownDark;
-    a {
-      color: $beigeDark;
+    color: $beigeDark;
     }
   }
-  a {
-    text-decoration: none;
-    color: $beigeLight;
-  }
-}
+
 
 .portfolio-circle {
+  display: block;
   width: 10rem;
   height: 10rem;
   border-radius: 5rem;
@@ -82,26 +80,22 @@ html {
   top: -1rem;
   left: 25%;
   z-index: 6;
-  //border: 6px dashed $beigeLight;
+  text-decoration: none;
   &:hover {
     background-color: $brownDark;
-    a {
-      color: $beigeDark;
-    }
-  }
-  a {
-    text-decoration: none;
-    color: $beigeLight;
+    color: $beigeDark;
   }
 }
 
 .experience-circle {
   width: 8rem;
   height: 8rem;
+  display: block;
   border-radius: 4rem;
   box-sizing: border-box;
   background-color: $yellowDark;
-  color: $brownDark;
+  text-decoration: none;
+  color: $beigeLight;
   text-align: center;
   padding: 3rem 0;
   font-size: 1.5rem;
@@ -111,23 +105,19 @@ html {
   z-index: 2;
   &:hover {
     background-color: $brownDark;
-    a {
-      color: $beigeDark;
+    color: $beigeDark;
     }
-  }
-  a {
-    text-decoration: none;
-    color: $beigeLight;
-  }
 }
 
 .contact-circle {
   width: 6rem;
   height: 6rem;
+  display: block;
   border-radius: 3rem;
   box-sizing: border-box;
   background-color: $beigeDark;
-  color: $brownDark;
+  text-decoration: none;
+  color: $beigeLight;
   text-align: center;
   padding: 2rem 1rem;
   font-size: 1rem;
@@ -137,12 +127,6 @@ html {
   z-index: 1;
   &:hover {
     background-color: $brownDark;
-    a {
-      color: $beigeDark;
-    }
-  }
-  a {
-    text-decoration: none;
-    color: $beigeLight;
+    color: $beigeDark;
   }
 }

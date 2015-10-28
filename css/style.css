@@ -86,6 +86,7 @@ html {
     color: #2c1a06; }
 
 .about-circle {
+  display: block;
   width: 6rem;
   height: 6rem;
   border-radius: 3rem;
@@ -93,20 +94,18 @@ html {
   background-color: #8e8272;
   color: #eadfc1;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2.5rem 0;
   font-size: 1rem;
   position: relative;
   left: 9%;
-  z-index: 1; }
+  z-index: 1;
+  text-decoration: none; }
   .about-circle:hover {
-    background-color: #2c1a06; }
-    .about-circle:hover a {
-      color: #cdba9c; }
-  .about-circle a {
-    text-decoration: none;
-    color: #eadfc1; }
+    background-color: #2c1a06;
+    color: #cdba9c; }
 
 .portfolio-circle {
+  display: block;
   width: 10rem;
   height: 10rem;
   border-radius: 5rem;
@@ -119,22 +118,21 @@ html {
   position: relative;
   top: -1rem;
   left: 25%;
-  z-index: 6; }
+  z-index: 6;
+  text-decoration: none; }
   .portfolio-circle:hover {
-    background-color: #2c1a06; }
-    .portfolio-circle:hover a {
-      color: #cdba9c; }
-  .portfolio-circle a {
-    text-decoration: none;
-    color: #eadfc1; }
+    background-color: #2c1a06;
+    color: #cdba9c; }
 
 .experience-circle {
   width: 8rem;
   height: 8rem;
+  display: block;
   border-radius: 4rem;
   box-sizing: border-box;
   background-color: #b49328;
-  color: #2c1a06;
+  text-decoration: none;
+  color: #eadfc1;
   text-align: center;
   padding: 3rem 0;
   font-size: 1.5rem;
@@ -143,20 +141,18 @@ html {
   top: -15rem;
   z-index: 2; }
   .experience-circle:hover {
-    background-color: #2c1a06; }
-    .experience-circle:hover a {
-      color: #cdba9c; }
-  .experience-circle a {
-    text-decoration: none;
-    color: #eadfc1; }
+    background-color: #2c1a06;
+    color: #cdba9c; }
 
 .contact-circle {
   width: 6rem;
   height: 6rem;
+  display: block;
   border-radius: 3rem;
   box-sizing: border-box;
   background-color: #cdba9c;
-  color: #2c1a06;
+  text-decoration: none;
+  color: #eadfc1;
   text-align: center;
   padding: 2rem 1rem;
   font-size: 1rem;
@@ -165,11 +161,7 @@ html {
   top: -24rem;
   z-index: 1; }
   .contact-circle:hover {
-    background-color: #2c1a06; }
-    .contact-circle:hover a {
-      color: #cdba9c; }
-  .contact-circle a {
-    text-decoration: none;
-    color: #eadfc1; }
+    background-color: #2c1a06;
+    color: #cdba9c; }
 
 /*# sourceMappingURL=style.css.map */
