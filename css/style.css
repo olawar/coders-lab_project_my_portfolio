@@ -66,12 +66,110 @@ html {
   position: relative; }
 
 .main-content {
-  width: 16rem;
-  height: 16rem;
-  border-radius: 8rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  width: 18rem;
+  height: 18rem;
+  border-radius: 9rem;
+  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
-  padding: 6rem 2rem;
-  box-sizing: border-box; }
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  border: 5px dashed #2c1a06;
+  position: relative;
+  top: 6rem;
+  left: 15%;
+  z-index: 5; }
+  .main-content h1 {
+    color: #2c1a06;
+    font-size: 2rem;
+    margin: 1.25rem 0; }
+  .main-content p {
+    color: #2c1a06; }
+
+.about-circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  background-color: #8e8272;
+  color: #eadfc1;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  position: relative;
+  left: 9%;
+  z-index: 1; }
+  .about-circle:hover {
+    background-color: #2c1a06; }
+    .about-circle:hover a {
+      color: #cdba9c; }
+  .about-circle a {
+    text-decoration: none;
+    color: #eadfc1; }
+
+.portfolio-circle {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  box-sizing: border-box;
+  background-color: #590100;
+  color: #eadfc1;
+  text-align: center;
+  padding: 3.75rem 1rem;
+  font-size: 2rem;
+  position: relative;
+  top: -1rem;
+  left: 25%;
+  z-index: 6; }
+  .portfolio-circle:hover {
+    background-color: #2c1a06; }
+    .portfolio-circle:hover a {
+      color: #cdba9c; }
+  .portfolio-circle a {
+    text-decoration: none;
+    color: #eadfc1; }
+
+.experience-circle {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 4rem;
+  box-sizing: border-box;
+  background-color: #b49328;
+  color: #2c1a06;
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.5rem;
+  position: relative;
+  left: 38%;
+  top: -15rem;
+  z-index: 2; }
+  .experience-circle:hover {
+    background-color: #2c1a06; }
+    .experience-circle:hover a {
+      color: #cdba9c; }
+  .experience-circle a {
+    text-decoration: none;
+    color: #eadfc1; }
+
+.contact-circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  background-color: #cdba9c;
+  color: #2c1a06;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  position: relative;
+  left: 49%;
+  top: -24rem;
+  z-index: 1; }
+  .contact-circle:hover {
+    background-color: #2c1a06; }
+    .contact-circle:hover a {
+      color: #cdba9c; }
+  .contact-circle a {
+    text-decoration: none;
+    color: #eadfc1; }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,11 +21,128 @@ html {
 }
 
 .main-content {
-  width: 16rem;
-  height: 16rem;
-  border-radius: 8rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  width: 18rem;
+  height: 18rem;
+  border-radius: 9rem;
+  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
   box-sizing: border-box;
+  border: 5px dashed $brownDark;
+  position: relative;
+  top: 6rem;
+  left: 15%;
+  z-index: 5;
+  h1 {
+    color: $brownDark;
+    font-size: 2rem;
+    margin: 1.25rem 0;
+  }
+  p {
+    color: $brownDark;
+  }
+}
+
+.about-circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  background-color: $grayBrown;
+  color: $beigeLight;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  position: relative;
+  left: 9%;
+  z-index: 1;
+  &:hover {
+    background-color: $brownDark;
+    a {
+      color: $beigeDark;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $beigeLight;
+  }
+}
+
+.portfolio-circle {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  box-sizing: border-box;
+  background-color: $deepRed;
+  color: $beigeLight;
+  text-align: center;
+  padding: 3.75rem 1rem;
+  font-size: 2rem;
+  position: relative;
+  top: -1rem;
+  left: 25%;
+  z-index: 6;
+  //border: 6px dashed $beigeLight;
+  &:hover {
+    background-color: $brownDark;
+    a {
+      color: $beigeDark;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $beigeLight;
+  }
+}
+
+.experience-circle {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 4rem;
+  box-sizing: border-box;
+  background-color: $yellowDark;
+  color: $brownDark;
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 1.5rem;
+  position: relative;
+  left: 38%;
+  top: -15rem;
+  z-index: 2;
+  &:hover {
+    background-color: $brownDark;
+    a {
+      color: $beigeDark;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $beigeLight;
+  }
+}
+
+.contact-circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  background-color: $beigeDark;
+  color: $brownDark;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  position: relative;
+  left: 49%;
+  top: -24rem;
+  z-index: 1;
+  &:hover {
+    background-color: $brownDark;
+    a {
+      color: $beigeDark;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $beigeLight;
+  }
 }
