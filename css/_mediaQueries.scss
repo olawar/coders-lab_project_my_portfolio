@@ -1,0 +1,35 @@
+$breakpoint1: 1600px;
+$breakpoint2: 1100px;
+$breakpoint3: 960px;
+$breakpoint4: 460px;
+$breakpoint5: 860px;
+
+@mixin large {
+  @media (max-width: #{$breakpoint1}){
+    @content;
+  }
+}
+
+@mixin normal {
+  @media (max-width: #{$breakpoint2}){
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: #{$breakpoint3}){
+    @content;
+  }
+}
+
+@mixin smallest {
+  @media (max-width: #{$breakpoint4}){
+    @content;
+  }
+}
+
+@mixin cover {
+  @media (max-width: #{$breakpoint5}){
+    @content;
+  }
+}
