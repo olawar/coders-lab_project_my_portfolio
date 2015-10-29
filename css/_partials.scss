@@ -1,3 +1,10 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
 html {
   font-size: 24px;
   font-family: latoregular, sans-serif;
@@ -7,21 +14,13 @@ html {
   @include normal {
     font-size: 14px;
   }
-  @include small {
-    font-size: 10px;
-  }
-  @include smallest {
-    font-size: 6px;
-  }
+  //@include small {
+  //  font-size: 10px;
+  //}
+  //@include smallest {
+  //  font-size: 6px;
+  //}
 }
-
-//.page-content {
-//  width: 80%;
-//  display: block;
-//  margin-right: auto;
-//  margin-left: auto;
-//}
-
 
 .clear {
   &:before,
@@ -42,7 +41,7 @@ html {
   float: left;
   min-height: 1px;
   /*gutter*/
-  padding: 1rem;
+  //padding: 1rem;
   box-sizing: border-box;
   @include smartphone{
     float: none;
@@ -50,56 +49,31 @@ html {
   }
 }
 
-
-
-.section-content {
-  position: relative;
-  padding: 0;
-  height: auto;
-  img {
-    position: relative;
-    padding: 0;
-  }
-}
-
-/*Main page*/
-
-
-
-//
-//#main-page {
-//  background-image: url("../images/lapin_comic_bg.jpg");
-//  background-size: contain;
-//  width: 100%;
-//  padding-bottom: 50.5%;
-//  height: 0;
-//  background-repeat: no-repeat;
-//  position: relative;
-//  box-sizing: border-box;
-//  @include cover {
-//    background-size: cover;
-//    height: 640px;
-//  }
-//}
-
-.overlayer {
-  position: absolute;
-  height: 100%;
-  padding: 0;
-}
-
 .left-margin {
   height: auto;
   float: left;
 }
 
-.bubbles-container {
-  //width: 35rem;
+/*Main page*/
+
+
+section#main-page {
+  padding: 0;
   height: 100%;
-  //position: absolute;
-  //padding: 0;
-  //top: 0;
-  float: left;
+  background-image: url("../images/lapin_comic_bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+
+.overlayer {
+  position: relative;
+  height: 100%;
+  padding: 0;
+}
+
+.bubbles-container {
   position: relative;
 }
 
@@ -112,10 +86,9 @@ html {
   padding: 3rem 2rem;
   box-sizing: border-box;
   border: 5px dashed $brownDark;
-  position: absolute;
-  top: 16%;
-  left: 4%;
   z-index: 5;
+  position: relative;
+  margin-top: 10%;
   h1 {
     color: $brownDark;
     font-size: 2.5rem;
@@ -126,7 +99,6 @@ html {
     color: $brownDark;
   }
 }
-
 
 .about-circle {
   display: block;
@@ -140,7 +112,7 @@ html {
   padding: 2.5rem 0;
   font-size: 1rem;
   position: absolute;
-  top: 52%;
+  top: 90%;
   left: 0;
   z-index: 1;
   text-decoration: none;
@@ -163,7 +135,7 @@ html {
   padding: 3.75rem 1rem;
   font-size: 2rem;
   position: absolute;
-  top: 58%;
+  top: 88%;
   left: 16%;
   z-index: 6;
   text-decoration: none;
@@ -186,8 +158,8 @@ html {
   padding: 3rem 0;
   font-size: 1.5rem;
   position: absolute;
-  left: 31%;
-  top: 50%;
+  left: 36%;
+  top: 75%;
   z-index: 2;
   &:hover {
     background-color: $brownDark;
@@ -216,122 +188,6 @@ html {
     color: $beigeDark;
   }
 }
-
-//
-//.main-content {
-//  width: 18rem;
-//  height: 18rem;
-//  border-radius: 9rem;
-//  background-color: rgba(255, 255, 255, 0.7);
-//  text-align: center;
-//  padding: 3rem 2rem;
-//  box-sizing: border-box;
-//  border: 5px dashed $brownDark;
-//  position: absolute;
-//  top: 16%;
-//  left: 15%;
-//  z-index: 5;
-//  h1 {
-//    color: $brownDark;
-//    font-size: 2.5rem;
-//    line-height: 2.5rem;
-//    margin: 1.25rem 0;
-//  }
-//  p {
-//    color: $brownDark;
-//  }
-//}
-//
-//
-//.about-circle {
-//  display: block;
-//  width: 6rem;
-//  height: 6rem;
-//  border-radius: 3rem;
-//  box-sizing: border-box;
-//  background-color: $grayBrown;
-//  color: $beigeLight;
-//  text-align: center;
-//  padding: 2.5rem 0;
-//  font-size: 1rem;
-//  position: absolute;
-//  top: 57%;
-//  left: 9%;
-//  z-index: 1;
-//  text-decoration: none;
-//  &:hover {
-//    background-color: $brownDark;
-//    color: $beigeDark;
-//  }
-//}
-//
-//
-//.portfolio-circle {
-//  display: block;
-//  width: 10rem;
-//  height: 10rem;
-//  border-radius: 5rem;
-//  box-sizing: border-box;
-//  background-color: $deepRed;
-//  color: $beigeLight;
-//  text-align: center;
-//  padding: 3.75rem 1rem;
-//  font-size: 2rem;
-//  position: absolute;
-//  top: 66%;
-//  left: 30%;
-//  z-index: 6;
-//  text-decoration: none;
-//  &:hover {
-//    background-color: $brownDark;
-//    color: $beigeDark;
-//  }
-//}
-//
-//.experience-circle {
-//  width: 8rem;
-//  height: 8rem;
-//  display: block;
-//  border-radius: 4rem;
-//  box-sizing: border-box;
-//  background-color: $yellowDark;
-//  text-decoration: none;
-//  color: $beigeLight;
-//  text-align: center;
-//  padding: 3rem 0;
-//  font-size: 1.5rem;
-//  position: absolute;
-//  left: 54%;
-//  top: 57%;
-//  z-index: 2;
-//  &:hover {
-//    background-color: $brownDark;
-//    color: $beigeDark;
-//  }
-//}
-//
-//.contact-circle {
-//  width: 6rem;
-//  height: 6rem;
-//  display: block;
-//  border-radius: 3rem;
-//  box-sizing: border-box;
-//  background-color: $beigeDark;
-//  text-decoration: none;
-//  color: $beigeLight;
-//  text-align: center;
-//  padding: 2rem 1rem;
-//  font-size: 1rem;
-//  position: absolute;
-//  left: 75%;
-//  top: 55%;
-//  z-index: 1;
-//  &:hover {
-//    background-color: $brownDark;
-//    color: $beigeDark;
-//  }
-//}
-
 
 /*Navigation bar*/
 
@@ -366,73 +222,17 @@ nav {
   }
 }
 
+/*Section about me*/
 
-//nav {
-//  height: 5rem;
-//  background-color: white;
-//  ul {
-//    display: -ms-flexbox;
-//    display: -webkit-flex;
-//    display: flex;
-//    -webkit-flex-direction: row;
-//    -ms-flex-direction: row;
-//    flex-direction: row;
-//    -webkit-flex-wrap: nowrap;
-//    -ms-flex-wrap: nowrap;
-//    flex-wrap: nowrap;
-//    -webkit-justify-content: center;
-//    -ms-flex-pack: center;
-//    justify-content: center;
-//    -webkit-align-content: center;
-//    -ms-flex-line-pack: center;
-//    align-content: center;
-//    -webkit-align-items: center;
-//    -ms-flex-align: center;
-//    align-items: center;
-//    li {
-//      width: 20%;
-//      -webkit-order: 0;
-//      -ms-flex-order: 0;
-//      order: 0;
-//      -webkit-flex: 0 1 auto;
-//      -ms-flex: 0 1 auto;
-//      flex: 0 1 auto;
-//      -webkit-align-self: auto;
-//      -ms-flex-item-align: auto;
-//      align-self: auto;
-//      text-transform: uppercase;
-//      text-align: center;
-//      font-size: 1rem;
-//      box-sizing: border-box;
-//      padding: 2rem;
-//      z-index: 1000;
-//      a {
-//        text-decoration: none;
-//        color: $grayBrown;
-//        &:hover {
-//          color: $deepRed;
-//        }
-//      }
-//    }
-//  }
-//}
-
-/*About me section*/
-
-//#about-me {
-//  background-image: url("../images/threea.jpg");
-//  background-size: contain;
-//  width: 100%;
-//  padding-bottom: 51%;
-//  height: 0;
-//  background-repeat: no-repeat;
-//  position: relative;
-//  box-sizing: border-box;
-//  @include cover {
-//    background-size: cover;
-//    height: 640px;
-//  }
-//}
+section#about-me {
+  padding: 0;
+  height: 100%;
+  background-image: url("../images/threea.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
 
 .intro-container {
   position: relative;
@@ -449,49 +249,143 @@ nav {
   border-radius: 2rem;
   width: 100%;
   height: auto;
-  position: absolute;
-  top: 5rem;
-  left: 0;
+  margin-top: 15%;
   z-index: 1;
   h1 {
     font-size: 2rem;
   }
   p {
     margin: 1rem 0;
+  span {
+    color: lighten($deepRed, 15%);
+  }
   }
 }
 
 a.skills-circle {
-  position: absolute;
-  top: 19rem;
-  left: 65%;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 4rem;
+  display: block;
+  margin-left: 58%;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  font-size: 1.25rem;
   background-color: $yellowDark;
   text-decoration: none;
   color: $beigeLight;
   text-align: center;
-  padding: 2.5rem 1rem;
+  padding: 3rem 1rem;
   box-sizing: border-box;
   z-index: 2;
-  animation: bounce 3s infinite linear alternate;
   &:hover {
     background-color: $deepRed;
     color: $beigeDark;
   }
-  @include normal {
-    animation: none;
-  }
 }
 
-@keyframes bounce {
-  0% {
-    top: 19rem;
-  }
-  100% {
-    top: 25rem;
-  }
-}
 
 /*Skills sub-section*/
+
+#skills {
+  height: 100%;
+  padding: 0;
+}
+
+.skills-header {
+  color: $brownDark;
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.tech-list {
+  line-height: 2rem;
+}
+
+.skills-chart {
+  line-height: 1.75rem;
+}
+
+.tech-chart {
+  ul {
+    border-left: 1px solid $brownDark;
+    li {
+      margin: 0.25rem;
+      box-sizing: border-box;
+      &:first-child {
+        background-color: lighten($brownDark, 10%);
+        width: 40%;
+      }
+      &:nth-child(2) {
+        background-color: $grayBrown;
+        width: 45%;
+      }
+      &:nth-child(3) {
+        background-color: $beigeDark;
+        width: 20%;
+      }
+    }
+  }
+}
+
+.levels {
+  ul {
+    line-height: 1rem;
+    li {
+      display: inline-block;
+      margin-right: 4rem;
+      padding: 0 1rem;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      color: $grayBrown;
+      font-size: 0.7rem;
+      border-right: 1px solid $brownDark;
+      }
+    }
+  }
+
+.useful-chart {
+  ul {
+    border-left: 1px solid $brownDark;
+    li {
+      margin: 0.25rem;
+      box-sizing: border-box;
+      &:first-child {
+        background-color: lighten($deepRed, 10%);
+        width: 40%;
+      }
+      &:nth-child(2) {
+        background-color: $beigeDark;
+        width: 20%;
+      }
+      &:nth-child(3) {
+        background-color: $yellowDark;
+        width: 35%;
+      }
+      &:nth-child(4) {
+        background-color: $grayBrown;
+        width: 15%;
+      }
+      &:nth-child(5) {
+        background-color: lighten($brownDark, 10%);
+        width: 20%;
+      }
+    }
+  }
+}
+
+.tips {
+  display: block;
+  border: 3px dashed $brownDark;
+  height: 4.25rem;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+
+.tips-image img {
+  display: block;
+  border-radius: 84px;
+  margin: 3rem 0;
+}
