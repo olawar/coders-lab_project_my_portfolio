@@ -9,10 +9,10 @@ html {
   font-size: 24px;
   font-family: latoregular, sans-serif;
   @include large {
-    font-size: 16px;
+    font-size: 24px;
   }
   @include normal {
-    font-size: 14px;
+    font-size: 18px;
   }
   //@include small {
   //  font-size: 10px;
@@ -67,14 +67,24 @@ section#main-page {
   position: relative;
 }
 
-.overlayer {
-  position: relative;
-  height: 100%;
-  padding: 0;
-}
-
-.bubbles-container {
-  position: relative;
+.about-circle {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  background-color: $grayBrown;
+  color: $beigeLight;
+  text-align: center;
+  padding: 2.5rem 0;
+  font-size: 1rem;
+  margin-top: 10%;
+  z-index: 1;
+  text-decoration: none;
+  &:hover {
+    background-color: $brownDark;
+    color: $beigeDark;
+  }
 }
 
 .main-content {
@@ -87,8 +97,7 @@ section#main-page {
   box-sizing: border-box;
   border: 5px dashed $brownDark;
   z-index: 5;
-  position: relative;
-  margin-top: 10%;
+  margin-top: 30%;
   h1 {
     color: $brownDark;
     font-size: 2.5rem;
@@ -100,43 +109,18 @@ section#main-page {
   }
 }
 
-.about-circle {
-  display: block;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 3rem;
-  box-sizing: border-box;
-  background-color: $grayBrown;
-  color: $beigeLight;
-  text-align: center;
-  padding: 2.5rem 0;
-  font-size: 1rem;
-  position: absolute;
-  top: 90%;
-  left: 0;
-  z-index: 1;
-  text-decoration: none;
-  &:hover {
-    background-color: $brownDark;
-    color: $beigeDark;
-  }
-}
-
-
 .portfolio-circle {
   display: block;
   width: 10rem;
   height: 10rem;
   border-radius: 5rem;
   box-sizing: border-box;
-  background-color: $deepRed;
+  background-color: lighten($deepRed, 10%);
   color: $beigeLight;
   text-align: center;
   padding: 3.75rem 1rem;
   font-size: 2rem;
-  position: absolute;
-  top: 88%;
-  left: 16%;
+  margin-top: -8%;
   z-index: 6;
   text-decoration: none;
   &:hover {
@@ -146,20 +130,18 @@ section#main-page {
 }
 
 .experience-circle {
-  width: 8rem;
-  height: 8rem;
+  width: 9rem;
+  height: 9rem;
   display: block;
-  border-radius: 4rem;
+  border-radius: 4.5rem;
   box-sizing: border-box;
-  background-color: $yellowDark;
+  background-color: $deepRed;
   text-decoration: none;
   color: $beigeLight;
   text-align: center;
-  padding: 3rem 0;
+  padding: 3.5rem 0;
   font-size: 1.5rem;
-  position: absolute;
-  left: 36%;
-  top: 75%;
+  margin-top: 21%;
   z-index: 2;
   &:hover {
     background-color: $brownDark;
@@ -168,27 +150,24 @@ section#main-page {
 }
 
 .contact-circle {
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
   display: block;
-  border-radius: 3rem;
+  border-radius: 3.5rem;
   box-sizing: border-box;
-  background-color: $beigeDark;
+  background-color: $yellowDark;
   text-decoration: none;
   color: $beigeLight;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2.25rem 1rem;
   font-size: 1rem;
-  position: absolute;
-  left: 45%;
-  top: 52%;
+  margin-top: 13%;
   z-index: 1;
   &:hover {
     background-color: $brownDark;
     color: $beigeDark;
   }
 }
-
 /*Navigation bar*/
 
 nav {
@@ -235,7 +214,7 @@ section#about-me {
 }
 
 .intro-container {
-  position: relative;
+  //position: relative;
   padding: 0;
   height: 100%;
 }
@@ -268,13 +247,14 @@ a.skills-circle {
   width: 10rem;
   height: 10rem;
   border-radius: 5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   background-color: $yellowDark;
   text-decoration: none;
   color: $beigeLight;
   text-align: center;
   padding: 3rem 1rem;
   box-sizing: border-box;
+  margin-top: -5%;
   z-index: 2;
   &:hover {
     background-color: $deepRed;
@@ -285,89 +265,217 @@ a.skills-circle {
 
 /*Skills sub-section*/
 
-#skills {
-  height: 100%;
+section#skills {
+  height: auto;
   padding: 0;
+  background-color: white;
 }
 
-.skills-header {
+.skills-section-header {
   color: $brownDark;
   font-size: 2rem;
   text-align: center;
-  margin: 3rem 0;
+  margin: 6rem 0;
 }
 
-.tech-list {
-  line-height: 2rem;
+.tech-header,
+.skills-header {
+  font-size: 1.5rem;
+  color: $grayBrown;
+  margin: 1rem 0 3rem 0;
+  text-align: center;
 }
 
-.skills-chart {
-  line-height: 1.75rem;
-}
-
-.tech-chart {
-  ul {
-    border-left: 1px solid $brownDark;
-    li {
-      margin: 0.25rem;
-      box-sizing: border-box;
-      &:first-child {
-        background-color: lighten($brownDark, 10%);
-        width: 40%;
-      }
-      &:nth-child(2) {
-        background-color: $grayBrown;
-        width: 45%;
-      }
-      &:nth-child(3) {
-        background-color: $beigeDark;
-        width: 20%;
-      }
-    }
+.tech-html {
+  color: $grayBrown;
+  text-align: center;
+  h3 {
+    margin: 1rem 0;
   }
+  p {
+    margin: 1rem 0 2rem 0;
+  }
+  .outer {
+    height: 1.5rem;
+    width: 100%;
+    background-color: lighten($grayBrown, 30%);
+  }
+  .inner {
+    height: 1.5rem;
+    width: 45%;
+    background-color: $violetDark;
+  }
+}
+
+
+.tech-css {
+  color: $grayBrown;
+  text-align: center;
+  h3 {
+    margin: 1rem 0;
+  }
+  p {
+    margin: 1rem 0 2rem 0;
+  }
+  .outer {
+    height: 1.5rem;
+    width: 100%;
+    background-color: lighten($grayBrown, 30%);
+  }
+  .inner {
+    height: 1.5rem;
+    width: 50%;
+    background-color: $violetDark;
+  }
+}
+
+.tech-js {
+  color: $grayBrown;
+  text-align: center;
+  h3 {
+    margin: 1rem 0;
+  }
+  p {
+    margin: 1rem 0 2rem 0;
+  }
+  .outer {
+    height: 1.5rem;
+    width: 100%;
+    background-color: lighten($grayBrown, 30%);
+  }
+  .inner {
+    height: 1.5rem;
+    width: 20%;
+    background-color: $violetDark;
+  }
+}
+
+.skills-rwd {
+  color: $grayBrown;
+  text-align: center;
+  h3 {
+    margin: 1rem 0;
+  }
+  p {
+    margin: 1rem 0 2rem 0;
+  }
+  .outer {
+    height: 1.5rem;
+    width: 100%;
+    background-color: lighten($grayBrown, 30%);
+  }
+  .inner {
+    height: 1.5rem;
+    width: 35%;
+    background-color: $deepRed;
+  }
+}
+
+.skills-git {
+  color: $grayBrown;
+  text-align: center;
+  h3 {
+    margin: 1rem 0;
+  }
+  p {
+    margin: 1rem 0 2rem 0;
+  }
+  .outer {
+    height: 1.5rem;
+    width: 100%;
+    background-color: lighten($grayBrown, 30%);
+  }
+  .inner {
+    height: 1.5rem;
+    width: 25%;
+    background-color: $deepRed;
+  }
+}
+
+.skills-rest {
+  color: $grayBrown;
+  text-align: center;
+  h3 {
+    margin: 1rem 0;
+  }
+  p {
+    margin: 1rem 0 2rem 0;
+  }
+  .outer {
+    height: 1.5rem;
+    width: 100%;
+    background-color: lighten($grayBrown, 30%);
+  }
+  .inner {
+    height: 1.5rem;
+    width: 20%;
+    background-color: $deepRed;
+  }
+}
+
+.skills-gulp {
+  color: $grayBrown;
+  text-align: center;
+  h3 {
+    margin: 1rem 0;
+  }
+  p {
+    margin: 1rem 0 2rem 0;
+  }
+  .outer {
+    height: 1.5rem;
+    width: 100%;
+    background-color: lighten($grayBrown, 30%);
+  }
+  .inner {
+    height: 1.5rem;
+    width: 30%;
+    background-color: $deepRed;
+  }
+}
+
+.skills-psd {
+  color: $grayBrown;
+  text-align: center;
+  h3 {
+    margin: 1rem 0;
+  }
+  p {
+    margin: 1rem 0 2rem 0;
+  }
+  .outer {
+    height: 1.5rem;
+    width: 100%;
+    background-color: lighten($grayBrown, 30%);
+  }
+  .inner {
+    height: 1.5rem;
+    width: 25%;
+    background-color: $deepRed;
+  }
+}
+
+.levels-header {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: $grayBrown;
+  margin: 1rem 0;
 }
 
 .levels {
   ul {
-    line-height: 1rem;
+    text-align: center;
     li {
       display: inline-block;
-      margin-right: 4rem;
       padding: 0 1rem;
       box-sizing: border-box;
       text-transform: uppercase;
       color: $grayBrown;
       font-size: 0.7rem;
-      border-right: 1px solid $brownDark;
-      }
-    }
-  }
-
-.useful-chart {
-  ul {
-    border-left: 1px solid $brownDark;
-    li {
-      margin: 0.25rem;
-      box-sizing: border-box;
-      &:first-child {
-        background-color: lighten($deepRed, 10%);
-        width: 40%;
-      }
-      &:nth-child(2) {
-        background-color: $beigeDark;
-        width: 20%;
-      }
-      &:nth-child(3) {
-        background-color: $yellowDark;
-        width: 35%;
-      }
-      &:nth-child(4) {
-        background-color: $grayBrown;
-        width: 15%;
-      }
-      &:nth-child(5) {
-        background-color: lighten($brownDark, 10%);
-        width: 20%;
+      border-right: 1px solid $grayBrown;
+      &:first-of-type {
+        border-left: 1px solid $grayBrown;
       }
     }
   }
@@ -380,12 +488,12 @@ a.skills-circle {
   box-sizing: border-box;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 
 .tips-image img {
   display: block;
   border-radius: 84px;
-  margin: 3rem 0;
+  margin: 7rem 0;
 }
