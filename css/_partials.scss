@@ -159,7 +159,7 @@ section#main-page {
   text-decoration: none;
   color: $beigeLight;
   text-align: center;
-  padding: 2.25rem 1rem;
+  padding: 2.5rem 1rem;
   font-size: 1rem;
   margin-top: 13%;
   z-index: 1;
@@ -282,7 +282,7 @@ section#skills {
 .skills-header {
   font-size: 1.5rem;
   color: $grayBrown;
-  margin: 1rem 0 3rem 0;
+  margin: 3rem 0 3rem 0;
   text-align: center;
 }
 
@@ -290,10 +290,12 @@ section#skills {
   color: $grayBrown;
   text-align: center;
   h3 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    float: left;
   }
   p {
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0;
+    float: right;
   }
   .outer {
     height: 1.5rem;
@@ -312,10 +314,12 @@ section#skills {
   color: $grayBrown;
   text-align: center;
   h3 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    float: left;
   }
   p {
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0;
+    float: right;
   }
   .outer {
     height: 1.5rem;
@@ -333,10 +337,12 @@ section#skills {
   color: $grayBrown;
   text-align: center;
   h3 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    float: left;
   }
   p {
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0;
+    float: right;
   }
   .outer {
     height: 1.5rem;
@@ -354,10 +360,12 @@ section#skills {
   color: $grayBrown;
   text-align: center;
   h3 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    float: left;
   }
   p {
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0;
+    float: right;
   }
   .outer {
     height: 1.5rem;
@@ -375,10 +383,12 @@ section#skills {
   color: $grayBrown;
   text-align: center;
   h3 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    float: left;
   }
   p {
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0;
+    float: right;
   }
   .outer {
     height: 1.5rem;
@@ -396,10 +406,12 @@ section#skills {
   color: $grayBrown;
   text-align: center;
   h3 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    float: left;
   }
   p {
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0;
+    float: right;
   }
   .outer {
     height: 1.5rem;
@@ -417,10 +429,12 @@ section#skills {
   color: $grayBrown;
   text-align: center;
   h3 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    float: left;
   }
   p {
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0;
+    float: right;
   }
   .outer {
     height: 1.5rem;
@@ -438,10 +452,12 @@ section#skills {
   color: $grayBrown;
   text-align: center;
   h3 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    float: left;
   }
   p {
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0;
+    float: right;
   }
   .outer {
     height: 1.5rem;
@@ -455,6 +471,14 @@ section#skills {
   }
 }
 
+[class*="skills-"] {
+  margin-bottom: 1.5rem;
+}
+
+[class*="tech-"] {
+  margin-bottom: 1.5rem;
+}
+
 .levels-header {
   text-align: center;
   font-size: 1rem;
@@ -466,9 +490,10 @@ section#skills {
 .levels {
   ul {
     text-align: center;
+    margin: 1.5rem 0;
     li {
       display: inline-block;
-      padding: 0 1rem;
+      padding: 0 2.25rem;
       box-sizing: border-box;
       text-transform: uppercase;
       color: $grayBrown;
@@ -488,12 +513,12 @@ section#skills {
   box-sizing: border-box;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 
 .tips-image img {
   display: block;
   border-radius: 84px;
-  margin: 7rem 0;
+  margin: 4rem 0;
 }

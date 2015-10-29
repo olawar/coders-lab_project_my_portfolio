@@ -209,7 +209,7 @@ section#main-page {
   text-decoration: none;
   color: #eadfc1;
   text-align: center;
-  padding: 2.25rem 1rem;
+  padding: 2.5rem 1rem;
   font-size: 1rem;
   margin-top: 13%;
   z-index: 1; }
@@ -309,16 +309,18 @@ section#skills {
 .skills-header {
   font-size: 1.5rem;
   color: #8e8272;
-  margin: 1rem 0 3rem 0;
+  margin: 3rem 0 3rem 0;
   text-align: center; }
 
 .tech-html {
   color: #8e8272;
   text-align: center; }
   .tech-html h3 {
-    margin: 1rem 0; }
+    margin: 0.5rem 0;
+    float: left; }
   .tech-html p {
-    margin: 1rem 0 2rem 0; }
+    margin: 0.5rem 0;
+    float: right; }
   .tech-html .outer {
     height: 1.5rem;
     width: 100%;
@@ -332,9 +334,11 @@ section#skills {
   color: #8e8272;
   text-align: center; }
   .tech-css h3 {
-    margin: 1rem 0; }
+    margin: 0.5rem 0;
+    float: left; }
   .tech-css p {
-    margin: 1rem 0 2rem 0; }
+    margin: 0.5rem 0;
+    float: right; }
   .tech-css .outer {
     height: 1.5rem;
     width: 100%;
@@ -348,9 +352,11 @@ section#skills {
   color: #8e8272;
   text-align: center; }
   .tech-js h3 {
-    margin: 1rem 0; }
+    margin: 0.5rem 0;
+    float: left; }
   .tech-js p {
-    margin: 1rem 0 2rem 0; }
+    margin: 0.5rem 0;
+    float: right; }
   .tech-js .outer {
     height: 1.5rem;
     width: 100%;
@@ -364,9 +370,11 @@ section#skills {
   color: #8e8272;
   text-align: center; }
   .skills-rwd h3 {
-    margin: 1rem 0; }
+    margin: 0.5rem 0;
+    float: left; }
   .skills-rwd p {
-    margin: 1rem 0 2rem 0; }
+    margin: 0.5rem 0;
+    float: right; }
   .skills-rwd .outer {
     height: 1.5rem;
     width: 100%;
@@ -380,9 +388,11 @@ section#skills {
   color: #8e8272;
   text-align: center; }
   .skills-git h3 {
-    margin: 1rem 0; }
+    margin: 0.5rem 0;
+    float: left; }
   .skills-git p {
-    margin: 1rem 0 2rem 0; }
+    margin: 0.5rem 0;
+    float: right; }
   .skills-git .outer {
     height: 1.5rem;
     width: 100%;
@@ -396,9 +406,11 @@ section#skills {
   color: #8e8272;
   text-align: center; }
   .skills-rest h3 {
-    margin: 1rem 0; }
+    margin: 0.5rem 0;
+    float: left; }
   .skills-rest p {
-    margin: 1rem 0 2rem 0; }
+    margin: 0.5rem 0;
+    float: right; }
   .skills-rest .outer {
     height: 1.5rem;
     width: 100%;
@@ -412,9 +424,11 @@ section#skills {
   color: #8e8272;
   text-align: center; }
   .skills-gulp h3 {
-    margin: 1rem 0; }
+    margin: 0.5rem 0;
+    float: left; }
   .skills-gulp p {
-    margin: 1rem 0 2rem 0; }
+    margin: 0.5rem 0;
+    float: right; }
   .skills-gulp .outer {
     height: 1.5rem;
     width: 100%;
@@ -428,9 +442,11 @@ section#skills {
   color: #8e8272;
   text-align: center; }
   .skills-psd h3 {
-    margin: 1rem 0; }
+    margin: 0.5rem 0;
+    float: left; }
   .skills-psd p {
-    margin: 1rem 0 2rem 0; }
+    margin: 0.5rem 0;
+    float: right; }
   .skills-psd .outer {
     height: 1.5rem;
     width: 100%;
@@ -440,6 +456,12 @@ section#skills {
     width: 25%;
     background-color: #590100; }
 
+[class*="skills-"] {
+  margin-bottom: 1.5rem; }
+
+[class*="tech-"] {
+  margin-bottom: 1.5rem; }
+
 .levels-header {
   text-align: center;
   font-size: 1rem;
@@ -448,10 +470,11 @@ section#skills {
   margin: 1rem 0; }
 
 .levels ul {
-  text-align: center; }
+  text-align: center;
+  margin: 1.5rem 0; }
   .levels ul li {
     display: inline-block;
-    padding: 0 1rem;
+    padding: 0 2.25rem;
     box-sizing: border-box;
     text-transform: uppercase;
     color: #8e8272;
@@ -467,11 +490,11 @@ section#skills {
   box-sizing: border-box;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  margin-top: 5rem; }
+  margin-top: 2rem; }
 
 .tips-image img {
   display: block;
   border-radius: 84px;
-  margin: 7rem 0; }
+  margin: 4rem 0; }
 
 /*# sourceMappingURL=style.css.map */
