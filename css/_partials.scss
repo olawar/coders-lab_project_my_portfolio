@@ -8,43 +8,98 @@ html {
     font-size: 14px;
   }
   @include small {
-    font-size: 12px;
+    font-size: 10px;
   }
   @include smallest {
-    font-size: 8px;
+    font-size: 6px;
   }
 }
 
-.page-content {
-  width: 80%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+//.page-content {
+//  width: 80%;
+//  display: block;
+//  margin-right: auto;
+//  margin-left: auto;
+//}
+
+
+.clear {
+  &:before,
+  &:after {
+    content : "";
+    display : table;
+    clear: both;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: (100%/12) * $i;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  /*gutter*/
+  padding: 1rem;
+  box-sizing: border-box;
+  @include smartphone{
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+.section-content {
+  position: relative;
+  padding: 0;
+  height: auto;
+  img {
+    position: relative;
+    padding: 0;
+  }
 }
 
 /*Main page*/
 
 
 
+//
+//#main-page {
+//  background-image: url("../images/lapin_comic_bg.jpg");
+//  background-size: contain;
+//  width: 100%;
+//  padding-bottom: 50.5%;
+//  height: 0;
+//  background-repeat: no-repeat;
+//  position: relative;
+//  box-sizing: border-box;
+//  @include cover {
+//    background-size: cover;
+//    height: 640px;
+//  }
+//}
 
-#main-page {
-  background-image: url("../images/lapin_comic_bg.jpg");
-  background-size: contain;
-  width: 100%;
-  padding-bottom: 50.5%;
-  height: 0;
-  background-repeat: no-repeat;
-  position: relative;
-  box-sizing: border-box;
-  @include cover {
-    background-size: cover;
-    height: 640px;
-  }
+.overlayer {
+  position: absolute;
+  height: 100%;
+  padding: 0;
+}
+
+.left-margin {
+  height: auto;
+  float: left;
 }
 
 .bubbles-container {
-  width: 35rem;
-  height: 34rem;
+  //width: 35rem;
+  height: 100%;
+  //position: absolute;
+  //padding: 0;
+  //top: 0;
+  float: left;
   position: relative;
 }
 
@@ -59,7 +114,7 @@ html {
   border: 5px dashed $brownDark;
   position: absolute;
   top: 16%;
-  left: 15%;
+  left: 4%;
   z-index: 5;
   h1 {
     color: $brownDark;
@@ -85,8 +140,8 @@ html {
   padding: 2.5rem 0;
   font-size: 1rem;
   position: absolute;
-  top: 57%;
-  left: 9%;
+  top: 52%;
+  left: 0;
   z-index: 1;
   text-decoration: none;
   &:hover {
@@ -108,8 +163,8 @@ html {
   padding: 3.75rem 1rem;
   font-size: 2rem;
   position: absolute;
-  top: 66%;
-  left: 30%;
+  top: 58%;
+  left: 16%;
   z-index: 6;
   text-decoration: none;
   &:hover {
@@ -131,8 +186,8 @@ html {
   padding: 3rem 0;
   font-size: 1.5rem;
   position: absolute;
-  left: 54%;
-  top: 57%;
+  left: 31%;
+  top: 50%;
   z-index: 2;
   &:hover {
     background-color: $brownDark;
@@ -153,14 +208,129 @@ html {
   padding: 2rem 1rem;
   font-size: 1rem;
   position: absolute;
-  left: 75%;
-  top: 55%;
+  left: 45%;
+  top: 52%;
   z-index: 1;
   &:hover {
     background-color: $brownDark;
     color: $beigeDark;
   }
 }
+
+//
+//.main-content {
+//  width: 18rem;
+//  height: 18rem;
+//  border-radius: 9rem;
+//  background-color: rgba(255, 255, 255, 0.7);
+//  text-align: center;
+//  padding: 3rem 2rem;
+//  box-sizing: border-box;
+//  border: 5px dashed $brownDark;
+//  position: absolute;
+//  top: 16%;
+//  left: 15%;
+//  z-index: 5;
+//  h1 {
+//    color: $brownDark;
+//    font-size: 2.5rem;
+//    line-height: 2.5rem;
+//    margin: 1.25rem 0;
+//  }
+//  p {
+//    color: $brownDark;
+//  }
+//}
+//
+//
+//.about-circle {
+//  display: block;
+//  width: 6rem;
+//  height: 6rem;
+//  border-radius: 3rem;
+//  box-sizing: border-box;
+//  background-color: $grayBrown;
+//  color: $beigeLight;
+//  text-align: center;
+//  padding: 2.5rem 0;
+//  font-size: 1rem;
+//  position: absolute;
+//  top: 57%;
+//  left: 9%;
+//  z-index: 1;
+//  text-decoration: none;
+//  &:hover {
+//    background-color: $brownDark;
+//    color: $beigeDark;
+//  }
+//}
+//
+//
+//.portfolio-circle {
+//  display: block;
+//  width: 10rem;
+//  height: 10rem;
+//  border-radius: 5rem;
+//  box-sizing: border-box;
+//  background-color: $deepRed;
+//  color: $beigeLight;
+//  text-align: center;
+//  padding: 3.75rem 1rem;
+//  font-size: 2rem;
+//  position: absolute;
+//  top: 66%;
+//  left: 30%;
+//  z-index: 6;
+//  text-decoration: none;
+//  &:hover {
+//    background-color: $brownDark;
+//    color: $beigeDark;
+//  }
+//}
+//
+//.experience-circle {
+//  width: 8rem;
+//  height: 8rem;
+//  display: block;
+//  border-radius: 4rem;
+//  box-sizing: border-box;
+//  background-color: $yellowDark;
+//  text-decoration: none;
+//  color: $beigeLight;
+//  text-align: center;
+//  padding: 3rem 0;
+//  font-size: 1.5rem;
+//  position: absolute;
+//  left: 54%;
+//  top: 57%;
+//  z-index: 2;
+//  &:hover {
+//    background-color: $brownDark;
+//    color: $beigeDark;
+//  }
+//}
+//
+//.contact-circle {
+//  width: 6rem;
+//  height: 6rem;
+//  display: block;
+//  border-radius: 3rem;
+//  box-sizing: border-box;
+//  background-color: $beigeDark;
+//  text-decoration: none;
+//  color: $beigeLight;
+//  text-align: center;
+//  padding: 2rem 1rem;
+//  font-size: 1rem;
+//  position: absolute;
+//  left: 75%;
+//  top: 55%;
+//  z-index: 1;
+//  &:hover {
+//    background-color: $brownDark;
+//    color: $beigeDark;
+//  }
+//}
 
 
 /*Navigation bar*/
@@ -169,41 +339,22 @@ nav {
   height: 5rem;
   background-color: white;
   ul {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
     li {
-      width: 20%;
-      -webkit-order: 0;
-      -ms-flex-order: 0;
-      order: 0;
-      -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-      flex: 0 1 auto;
-      -webkit-align-self: auto;
-      -ms-flex-item-align: auto;
-      align-self: auto;
+      display: inline-block;
       text-transform: uppercase;
       text-align: center;
       font-size: 1rem;
       box-sizing: border-box;
-      padding: 2rem;
+      padding: 2rem 1rem;
       z-index: 1000;
+      &:last-of-type {
+        float: right;
+        font-size: 2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: black;
+        padding: 1.5rem;
+      }
       a {
         text-decoration: none;
         color: $grayBrown;
@@ -215,31 +366,78 @@ nav {
   }
 }
 
+
+//nav {
+//  height: 5rem;
+//  background-color: white;
+//  ul {
+//    display: -ms-flexbox;
+//    display: -webkit-flex;
+//    display: flex;
+//    -webkit-flex-direction: row;
+//    -ms-flex-direction: row;
+//    flex-direction: row;
+//    -webkit-flex-wrap: nowrap;
+//    -ms-flex-wrap: nowrap;
+//    flex-wrap: nowrap;
+//    -webkit-justify-content: center;
+//    -ms-flex-pack: center;
+//    justify-content: center;
+//    -webkit-align-content: center;
+//    -ms-flex-line-pack: center;
+//    align-content: center;
+//    -webkit-align-items: center;
+//    -ms-flex-align: center;
+//    align-items: center;
+//    li {
+//      width: 20%;
+//      -webkit-order: 0;
+//      -ms-flex-order: 0;
+//      order: 0;
+//      -webkit-flex: 0 1 auto;
+//      -ms-flex: 0 1 auto;
+//      flex: 0 1 auto;
+//      -webkit-align-self: auto;
+//      -ms-flex-item-align: auto;
+//      align-self: auto;
+//      text-transform: uppercase;
+//      text-align: center;
+//      font-size: 1rem;
+//      box-sizing: border-box;
+//      padding: 2rem;
+//      z-index: 1000;
+//      a {
+//        text-decoration: none;
+//        color: $grayBrown;
+//        &:hover {
+//          color: $deepRed;
+//        }
+//      }
+//    }
+//  }
+//}
+
 /*About me section*/
 
-#about-me {
-  background-image: url("../images/threea.jpg");
-  background-size: contain;
-  width: 100%;
-  padding-bottom: 51%;
-  height: 0;
-  background-repeat: no-repeat;
-  position: relative;
-  box-sizing: border-box;
-  @include cover {
-    background-size: cover;
-    height: 640px;
-  }
-}
+//#about-me {
+//  background-image: url("../images/threea.jpg");
+//  background-size: contain;
+//  width: 100%;
+//  padding-bottom: 51%;
+//  height: 0;
+//  background-repeat: no-repeat;
+//  position: relative;
+//  box-sizing: border-box;
+//  @include cover {
+//    background-size: cover;
+//    height: 640px;
+//  }
+//}
 
 .intro-container {
-  width: 50%;
-  margin-left: 50%;
   position: relative;
-  @include small {
-    margin-left: 10%;
-    width: 80%;
-  }
+  padding: 0;
+  height: 100%;
 }
 
 .intro {
@@ -247,11 +445,13 @@ nav {
   padding: 2rem;
   box-sizing: border-box;
   border: 5px dashed $brownDark;
+  color: $brownDark;
   border-radius: 2rem;
   width: 100%;
   height: auto;
   position: absolute;
   top: 5rem;
+  left: 0;
   z-index: 1;
   h1 {
     font-size: 2rem;
@@ -264,7 +464,7 @@ nav {
 a.skills-circle {
   position: absolute;
   top: 19rem;
-  left: 70%;
+  left: 65%;
   width: 8rem;
   height: 8rem;
   border-radius: 4rem;

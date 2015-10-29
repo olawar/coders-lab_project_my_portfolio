@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e008d6-7085-4d1b-af77-32827df3f1fe" name="Default" comment="Added styling for the navigation bar and 'about me' section.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/_mediaQueries.scss" />
+    <list default="true" id="c1e008d6-7085-4d1b-af77-32827df3f1fe" name="Default" comment="Added grid layout and adapted document structure and styling accordingly. Added structure for &quot;skills&quot; subsection">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_mediaQueries.scss" afterPath="$PROJECT_DIR$/css/_mediaQueries.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_partials.scss" afterPath="$PROJECT_DIR$/css/_partials.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.scss" afterPath="$PROJECT_DIR$/css/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Introduction.iws" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="_mediaQueries.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/_mediaQueries.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.346153">
-              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -52,8 +51,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.826809">
-              <caret line="41" column="57" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
+            <state vertical-scroll-proportion="2.440095">
+              <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -62,8 +61,8 @@
       <file leaf-file-name="_partials.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/_partials.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.192308">
-              <caret line="294" column="1" selection-start-line="294" selection-start-column="1" selection-end-line="294" selection-end-column="1" />
+            <state vertical-scroll-proportion="-13.730769">
+              <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -240,7 +239,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446069563562</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Improved styling for the main and 'about me' sections, added draft media queries">
+      <created>1446111825121</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1446111825121</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -253,7 +258,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32815966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960423" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -276,7 +281,9 @@
     <MESSAGE value="Added styling for the main page section." />
     <MESSAGE value="Improved internal links in the main page section." />
     <MESSAGE value="Added styling for the navigation bar and 'about me' section." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added styling for the navigation bar and 'about me' section." />
+    <MESSAGE value="Improved styling for the main and 'about me' sections, added draft media queries" />
+    <MESSAGE value="Added grid layout and adapted document structure and styling accordingly. Added structure for &quot;skills&quot; subsection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added grid layout and adapted document structure and styling accordingly. Added structure for &quot;skills&quot; subsection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -587,6 +594,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/_mediaQueries.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.576923">
@@ -595,26 +610,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/_mediaQueries.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/_partials.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.192308">
-          <caret line="294" column="1" selection-start-line="294" selection-start-column="1" selection-end-line="294" selection-end-column="1" />
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.826809">
-          <caret line="41" column="57" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
+        <state vertical-scroll-proportion="2.440095">
+          <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
           <folding />
         </state>
       </provider>
