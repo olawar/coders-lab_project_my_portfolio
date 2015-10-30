@@ -311,11 +311,15 @@ section#my-skills {
   margin: 3rem 0 3rem 0;
   text-align: center; }
 
-[class*="tech-"] {
-  margin: 2% 25%; }
+[class*="tech-"],
+[class*="skills-"] {
+  margin: 2% 25%;
+  width: 50%; }
   @media (max-width: 980px) {
-    [class*="tech-"] {
-      margin: 3% 0;
+    [class*="tech-"],
+    [class*="skills-"] {
+      margin: 3% auto;
+      width: 80%;
       padding: 0 5%; } }
 
 .tech-html {
@@ -373,10 +377,12 @@ section#my-skills {
     background-color: #431B4A; }
 
 .levels {
-  margin: 2% 25%; }
+  margin: 2% 25%;
+  width: 50%; }
   @media (max-width: 980px) {
     .levels {
-      margin: 0; } }
+      margin: 3% auto;
+      width: 80%; } }
   .levels ul {
     text-align: center; }
     .levels ul li {
@@ -389,13 +395,6 @@ section#my-skills {
       border-right: 1px solid #8e8272; }
       .levels ul li:first-of-type {
         border-left: 1px solid #8e8272; }
-
-[class*="skills-"] {
-  margin: 2% 25%; }
-  @media (max-width: 980px) {
-    [class*="skills-"] {
-      margin: 3% 0;
-      padding: 0 5%; } }
 
 .skills-rwd {
   color: #8e8272;

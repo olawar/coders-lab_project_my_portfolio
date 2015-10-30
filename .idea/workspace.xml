@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e008d6-7085-4d1b-af77-32827df3f1fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_mediaQueries.scss" afterPath="$PROJECT_DIR$/css/_mediaQueries.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_partials.scss" afterPath="$PROJECT_DIR$/css/_partials.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
@@ -47,21 +46,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
-              <caret line="79" column="14" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+            <state vertical-scroll-proportion="1.2099644">
+              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_partials.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_partials.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/_partials.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="9.696322">
-              <caret line="511" column="31" selection-start-line="511" selection-start-column="31" selection-end-line="511" selection-end-column="31" />
+            <state vertical-scroll-proportion="-21.0">
+              <caret line="387" column="32" selection-start-line="387" selection-start-column="32" selection-end-line="387" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -702,18 +701,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/_partials.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
-          <caret line="79" column="14" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+        <state vertical-scroll-proportion="-21.0">
+          <caret line="387" column="32" selection-start-line="387" selection-start-column="32" selection-end-line="387" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/_partials.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.696322">
-          <caret line="511" column="31" selection-start-line="511" selection-start-column="31" selection-end-line="511" selection-end-column="31" />
+        <state vertical-scroll-proportion="1.2099644">
+          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
           <folding />
         </state>
       </provider>

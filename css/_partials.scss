@@ -290,10 +290,14 @@ section#my-skills {
   text-align: center;
 }
 
-[class*="tech-"] {
+
+[class*="tech-"],
+[class*="skills-"] {
   margin: 2% 25%;
+  width: 50%;
   @include smartphone {
-    margin: 3% 0;
+    margin: 3% auto;
+    width: 80%;
     padding: 0 5%;
   }
 }
@@ -370,8 +374,10 @@ section#my-skills {
 
 .levels {
   margin: 2% 25%;
+  width: 50%;
   @include smartphone {
-    margin: 0;
+    margin: 3% auto;
+    width: 80%;
   }
   ul {
     text-align: center;
@@ -387,14 +393,6 @@ section#my-skills {
         border-left: 1px solid $grayBrown;
       }
     }
-  }
-}
-
-[class*="skills-"] {
-  margin: 2% 25%;
-  @include smartphone {
-    margin: 3% 0;
-    padding: 0 5%;
   }
 }
 
