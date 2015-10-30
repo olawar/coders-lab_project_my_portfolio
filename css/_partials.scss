@@ -4,22 +4,32 @@ body {
   width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 24px;
+  font-size: 130%;
   font-family: latoregular, sans-serif;
-  @include large {
-    font-size: 24px;
-  }
-  @include normal {
-    font-size: 18px;
-  }
+  //@include large {
+  //  font-size: 24px;
+  //}
+  //@include normal {
+  //  font-size: 18px;
+  //}
   //@include small {
   //  font-size: 10px;
   //}
   //@include smallest {
   //  font-size: 6px;
   //}
+}
+
+.grid-container {
+  width: 100%;
+  border: 1px solid red;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 .clear {
@@ -34,6 +44,7 @@ html {
 @for $i from 1 through 12 {
   .col-#{$i} {
     width: (100%/12) * $i;
+    border:1px solid black;
   }
 }
 
@@ -42,16 +53,10 @@ html {
   min-height: 1px;
   /*gutter*/
   //padding: 1rem;
-  box-sizing: border-box;
   @include smartphone{
     float: none;
     width: 100%;
   }
-}
-
-.left-margin {
-  height: auto;
-  float: left;
 }
 
 /*Main page*/
@@ -171,8 +176,9 @@ section#main-page {
 /*Navigation bar*/
 
 nav {
-  height: 5rem;
   background-color: white;
+  width: 100%;
+  height: auto;
   ul {
     li {
       display: inline-block;
@@ -180,7 +186,7 @@ nav {
       text-align: center;
       font-size: 1rem;
       box-sizing: border-box;
-      padding: 2rem 1rem;
+      padding: 4% 4% 4% 0;
       z-index: 1000;
       &:last-of-type {
         float: right;
@@ -188,7 +194,7 @@ nav {
         font-weight: 900;
         text-transform: uppercase;
         color: black;
-        padding: 1.5rem;
+        padding: 3% 0;
       }
       a {
         text-decoration: none;
@@ -214,27 +220,27 @@ section#about-me {
 }
 
 .intro-container {
-  //position: relative;
-  padding: 0;
-  height: 100%;
+  margin-left: 50%;
+  @include smartphone {
+    margin-left: 0;
+  }
 }
 
 .intro {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 2rem;
-  box-sizing: border-box;
+  padding: 10%;
   border: 5px dashed $brownDark;
   color: $brownDark;
-  border-radius: 2rem;
+  border-radius: 10%;
   width: 100%;
   height: auto;
   margin-top: 15%;
   z-index: 1;
-  h1 {
+  h2 {
     font-size: 2rem;
   }
   p {
-    margin: 1rem 0;
+    margin: 5% 0;
   span {
     color: lighten($deepRed, 15%);
   }
@@ -243,7 +249,7 @@ section#about-me {
 
 a.skills-circle {
   display: block;
-  margin-left: 58%;
+  margin-left: 20%;
   width: 10rem;
   height: 10rem;
   border-radius: 5rem;
@@ -275,10 +281,11 @@ section#skills {
   color: $brownDark;
   font-size: 2rem;
   text-align: center;
-  margin: 6rem 0;
+  margin: 7rem 0 5rem 0;
 }
 
-.tech-header,
+
+.technology-header,
 .skills-header {
   font-size: 1.5rem;
   color: $grayBrown;
@@ -289,7 +296,9 @@ section#skills {
 .tech-html {
   color: $grayBrown;
   text-align: center;
-  h3 {
+  display: table-cell;
+  vertical-align: middle;
+  h4 {
     margin: 0.5rem 0;
     float: left;
   }
@@ -313,7 +322,7 @@ section#skills {
 .tech-css {
   color: $grayBrown;
   text-align: center;
-  h3 {
+  h4 {
     margin: 0.5rem 0;
     float: left;
   }
@@ -336,7 +345,7 @@ section#skills {
 .tech-js {
   color: $grayBrown;
   text-align: center;
-  h3 {
+  h4 {
     margin: 0.5rem 0;
     float: left;
   }
@@ -359,7 +368,7 @@ section#skills {
 .skills-rwd {
   color: $grayBrown;
   text-align: center;
-  h3 {
+  h4 {
     margin: 0.5rem 0;
     float: left;
   }
@@ -382,7 +391,7 @@ section#skills {
 .skills-git {
   color: $grayBrown;
   text-align: center;
-  h3 {
+  h4 {
     margin: 0.5rem 0;
     float: left;
   }
@@ -405,7 +414,7 @@ section#skills {
 .skills-rest {
   color: $grayBrown;
   text-align: center;
-  h3 {
+  h4 {
     margin: 0.5rem 0;
     float: left;
   }
@@ -428,7 +437,7 @@ section#skills {
 .skills-gulp {
   color: $grayBrown;
   text-align: center;
-  h3 {
+  h4 {
     margin: 0.5rem 0;
     float: left;
   }
@@ -451,7 +460,7 @@ section#skills {
 .skills-psd {
   color: $grayBrown;
   text-align: center;
-  h3 {
+  h4 {
     margin: 0.5rem 0;
     float: left;
   }
@@ -474,10 +483,12 @@ section#skills {
 [class*="skills-"] {
   margin-bottom: 1.5rem;
 }
-
-[class*="tech-"] {
-  margin-bottom: 1.5rem;
-}
+//
+//[class*="tech-"] {
+//  margin-bottom: 1.5rem;
+//  margin-left: auto;
+//  margin-right: auto;
+//}
 
 .levels-header {
   text-align: center;
