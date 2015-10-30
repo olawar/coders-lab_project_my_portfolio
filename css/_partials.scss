@@ -27,7 +27,6 @@ html {
 
 .grid-container {
   width: 100%;
-  border: 1px solid red;
   margin: 0 auto;
   max-width: 1280px;
 }
@@ -44,7 +43,6 @@ html {
 @for $i from 1 through 12 {
   .col-#{$i} {
     width: (100%/12) * $i;
-    border:1px solid black;
   }
 }
 
@@ -83,7 +81,7 @@ section#main-page {
   text-align: center;
   padding: 2.5rem 0;
   font-size: 1rem;
-  margin-top: 10%;
+  margin-top: 30%;
   z-index: 1;
   text-decoration: none;
   &:hover {
@@ -102,7 +100,7 @@ section#main-page {
   box-sizing: border-box;
   border: 5px dashed $brownDark;
   z-index: 5;
-  margin-top: 30%;
+  margin-top: 40%;
   h1 {
     color: $brownDark;
     font-size: 2.5rem;
@@ -146,7 +144,7 @@ section#main-page {
   text-align: center;
   padding: 3.5rem 0;
   font-size: 1.5rem;
-  margin-top: 21%;
+  margin-top: 30%;
   z-index: 2;
   &:hover {
     background-color: $brownDark;
@@ -271,33 +269,38 @@ a.skills-circle {
 
 /*Skills sub-section*/
 
-section#skills {
+section#my-skills {
   height: auto;
   padding: 0;
   background-color: white;
 }
 
-.skills-section-header {
+.skilled-section-header {
   color: $brownDark;
   font-size: 2rem;
   text-align: center;
   margin: 7rem 0 5rem 0;
 }
 
-
 .technology-header,
-.skills-header {
+.skilled-header {
   font-size: 1.5rem;
   color: $grayBrown;
   margin: 3rem 0 3rem 0;
   text-align: center;
 }
 
+[class*="tech-"] {
+  margin: 2% 25%;
+  @include smartphone {
+    margin: 3% 0;
+    padding: 0 5%;
+  }
+}
+
 .tech-html {
   color: $grayBrown;
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
   h4 {
     margin: 0.5rem 0;
     float: left;
@@ -362,6 +365,36 @@ section#skills {
     height: 1.5rem;
     width: 20%;
     background-color: $violetDark;
+  }
+}
+
+.levels {
+  margin: 2% 25%;
+  @include smartphone {
+    margin: 0;
+  }
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      padding: 0 5%;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      color: $grayBrown;
+      font-size: 60%;
+      border-right: 1px solid $grayBrown;
+      &:first-of-type {
+        border-left: 1px solid $grayBrown;
+      }
+    }
+  }
+}
+
+[class*="skills-"] {
+  margin: 2% 25%;
+  @include smartphone {
+    margin: 3% 0;
+    padding: 0 5%;
   }
 }
 
@@ -480,56 +513,27 @@ section#skills {
   }
 }
 
-[class*="skills-"] {
-  margin-bottom: 1.5rem;
-}
-//
-//[class*="tech-"] {
-//  margin-bottom: 1.5rem;
-//  margin-left: auto;
-//  margin-right: auto;
-//}
-
-.levels-header {
-  text-align: center;
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: $grayBrown;
-  margin: 1rem 0;
-}
-
-.levels {
-  ul {
-    text-align: center;
-    margin: 1.5rem 0;
-    li {
-      display: inline-block;
-      padding: 0 2.25rem;
-      box-sizing: border-box;
-      text-transform: uppercase;
-      color: $grayBrown;
-      font-size: 0.7rem;
-      border-right: 1px solid $grayBrown;
-      &:first-of-type {
-        border-left: 1px solid $grayBrown;
-      }
-    }
-  }
-}
-
 .tips {
   display: block;
   border: 3px dashed $brownDark;
-  height: 4.25rem;
+  height: auto;
+  font-size: 1rem;
   box-sizing: border-box;
-  padding: 1rem 2rem;
+  padding: 3%;
   border-radius: 2rem;
-  margin-top: 2rem;
+  margin-left: ((100%/12)*4);
+  margin-top: 3rem;
+  @include smartphone {
+    margin: 5% 0 0 0;
+  }
 }
-
 
 .tips-image img {
   display: block;
   border-radius: 84px;
-  margin: 4rem 0;
+  float: right;
+  margin: 5rem 0 6rem 0;
+  @include smartphone {
+    margin: 5% 0;
+  }
 }

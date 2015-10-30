@@ -4,7 +4,7 @@ $breakpoint3: 960px;
 $breakpoint4: 460px;
 $breakpoint5: 860px;
 
-$smartphone-width: "(max-width: 768px)";
+$smartphone-width: "(max-width: 980px)";
 
 @mixin smartphone {
   @media #{$smartphone-width} {
