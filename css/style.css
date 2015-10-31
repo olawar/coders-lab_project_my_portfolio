@@ -254,7 +254,8 @@ section#about-me {
   margin-left: 50%; }
   @media (max-width: 980px) {
     .intro-container {
-      margin-left: 0; } }
+      margin: 0 5%;
+      width: 90%; } }
 
 .intro {
   background-color: rgba(255, 255, 255, 0.7);
@@ -498,15 +499,68 @@ section#my-skills {
   margin-top: 3rem; }
   @media (max-width: 980px) {
     .tips {
-      margin: 5% 0 0 0; } }
+      margin: 5%;
+      width: 90%; } }
 
 .tips-image img {
   display: block;
-  border-radius: 84px;
+  border-radius: 100px;
   float: right;
   margin: 5rem 0 6rem 0; }
   @media (max-width: 980px) {
     .tips-image img {
-      margin: 5% 0; } }
+      margin: 0; } }
+
+/*Contact section*/
+.contact-section-header {
+  color: #2c1a06;
+  font-size: 2rem;
+  text-align: center;
+  margin: 7rem 0 5rem 0; }
+
+.contact-data h3 {
+  font-size: 1.5rem;
+  color: #8e8272;
+  margin: 3rem 0;
+  text-align: center; }
+.contact-data ul {
+  text-align: center; }
+  .contact-data ul li {
+    color: #8e8272;
+    line-height: 2.5rem;
+    font-size: 1.2rem; }
+    .contact-data ul li a {
+      color: #590100;
+      text-decoration: none; }
+
+li.social-icons {
+  display: inline-block;
+  margin: 0 0.5rem; }
+
+img.me {
+  border-radius: 200px;
+  margin: 3rem 0; }
+
+.goodbye-circle {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  border: 5px dashed #2c1a06;
+  z-index: 5;
+  color: #2c1a06;
+  font-size: 1.2rem;
+  margin-top: 140%; }
+
+.references {
+  margin: 4rem 0;
+  color: #8e8272;
+  font-size: 0.6rem;
+  text-align: center; }
+  .references a {
+    color: #590100; }
 
 /*# sourceMappingURL=style.css.map */

@@ -220,7 +220,8 @@ section#about-me {
 .intro-container {
   margin-left: 50%;
   @include smartphone {
-    margin-left: 0;
+    margin: 0 5%;
+    width: 90%;
   }
 }
 
@@ -522,16 +523,82 @@ section#my-skills {
   margin-left: ((100%/12)*4);
   margin-top: 3rem;
   @include smartphone {
-    margin: 5% 0 0 0;
+    margin: 5%;
+    width: 90%;
   }
 }
 
 .tips-image img {
   display: block;
-  border-radius: 84px;
+  border-radius: 100px;
   float: right;
   margin: 5rem 0 6rem 0;
   @include smartphone {
-    margin: 5% 0;
+    margin: 0;
+  }
+}
+
+/*Contact section*/
+
+.contact-section-header {
+  color: $brownDark;
+  font-size: 2rem;
+  text-align: center;
+  margin: 7rem 0 5rem 0;
+}
+
+.contact-data {
+  h3 {
+    font-size: 1.5rem;
+    color: $grayBrown;
+    margin: 3rem 0;
+    text-align: center;
+  }
+  ul {
+    text-align: center;
+    li {
+      color: $grayBrown;
+      line-height: 2.5rem;
+      font-size: 1.2rem;
+      a {
+        color: $deepRed;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+li.social-icons {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+img.me {
+  border-radius: 200px;
+  margin: 3rem 0;
+}
+
+.goodbye-circle {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  border: 5px dashed $brownDark;
+  z-index: 5;
+  color: $brownDark;
+  font-size: 1.2rem;
+  margin-top: 140%;
+}
+
+.references {
+  margin: 4rem 0;
+  color: $grayBrown;
+  font-size: 0.6rem;
+  text-align: center;
+  a {
+    color: $deepRed;
   }
 }
