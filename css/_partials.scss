@@ -87,6 +87,9 @@ section#main-page {
     background-color: $brownDark;
     color: $beigeDark;
   }
+  @include smartphone {
+    margin: 0;
+  }
 }
 
 .main-content {
@@ -109,6 +112,9 @@ section#main-page {
   p {
     color: $brownDark;
   }
+  @include smartphone {
+    margin: 0;
+  }
 }
 
 .portfolio-circle {
@@ -128,6 +134,9 @@ section#main-page {
   &:hover {
     background-color: $brownDark;
     color: $beigeDark;
+  }
+  @include smartphone {
+    margin: 0;
   }
 }
 
@@ -150,6 +159,9 @@ section#main-page {
     background-color: $brownDark;
     color: $beigeDark;
   }
+  @include smartphone {
+    margin: 0;
+  }
 }
 
 .experience-circle {
@@ -170,6 +182,9 @@ section#main-page {
     background-color: $brownDark;
     color: $beigeDark;
   }
+  @include smartphone {
+    margin: 0;
+  }
 }
 
 .contact-circle {
@@ -189,6 +204,9 @@ section#main-page {
   &:hover {
     background-color: $brownDark;
     color: $beigeDark;
+  }
+  @include smartphone {
+    margin: 0;
   }
 }
 /*Navigation bar*/
@@ -627,6 +645,13 @@ section#portfolio {
       vertical-align: bottom;
     }
   }
+  img {
+    @include smartphone {
+      width: 100%;
+      padding: 0 10%;
+      box-sizing: border-box;
+    }
+  }
 }
 
 /*Portfolio divider*/
@@ -780,6 +805,11 @@ li.social-icons {
 img.me {
   border-radius: 200px;
   margin: 3rem 0;
+  @include smartphone {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
 }
 
 .goodbye-circle {
@@ -795,6 +825,9 @@ img.me {
   color: $brownDark;
   font-size: 1.2rem;
   margin-top: 140%;
+  @include smartphone {
+    margin: 0;
+  }
 }
 
 .references {
