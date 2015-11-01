@@ -403,6 +403,9 @@ section#my-skills {
   }
   ul {
     text-align: center;
+    &:last-of-type {
+      margin-bottom: 6rem;
+    }
     li {
       display: inline-block;
       padding: 0 5%;
@@ -533,6 +536,14 @@ section#my-skills {
   }
 }
 
+/*Skills divider*/
+
+article.skilled-divider {
+  min-height: 40%;
+  padding: 0;
+  background-color: $violetDark;
+}
+
 .tips {
   display: block;
   border: 3px dashed $brownDark;
@@ -540,9 +551,11 @@ section#my-skills {
   font-size: 1rem;
   box-sizing: border-box;
   padding: 3%;
+  background-color: white;
   border-radius: 2rem;
-  margin-left: ((100%/12)*4);
+  margin-left: ((100%/12)*2);
   margin-top: 3rem;
+  text-align: right;
   @include smartphone {
     margin: 5%;
     width: 90%;
@@ -553,7 +566,7 @@ section#my-skills {
   display: block;
   border-radius: 100px;
   float: right;
-  margin: 5rem 0 6rem 0;
+  margin: 5.5rem 0 0 0;
   @include smartphone {
     margin: 0;
   }
@@ -562,13 +575,13 @@ section#my-skills {
 /*Portfolio*/
 
 section#portfolio {
-  height: 100%;
+  height: auto;
   padding: 0;
-  background-color: $violetDark;
+  background-color: white;
 }
 
 .portfolio-section-header {
-  color: white;
+  color: $brownDark;
   font-size: 2rem;
   text-align: center;
   margin: 7rem 0 5rem 0;
@@ -576,7 +589,7 @@ section#portfolio {
 
 .division-header {
   font-size: 1.5rem;
-  color: white;
+  color: $grayBrown;
   margin: 3rem 0 3rem 0;
   text-align: center;
 }
@@ -584,31 +597,128 @@ section#portfolio {
 .portfolio-item {
   h4 {
     font-size: 1.2rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 3rem;
+    color: $grayBrown;
+    margin: 6rem 0 3rem 0;
+    span {
+      text-transform: uppercase;
+    }
   }
-  a {
-    width: 100%;
-     img {
-      width: 100%;
+  p {
+    font-size: 1rem;
+    color: $grayBrown;
+    margin-bottom: 3rem;
+    a {
+      color: $deepRed;
+      text-decoration: none;
+    }
+  }
+  ul {
+    margin: 0;
+    li {
+      display: inline-block;
+      text-align: center;
+      background-color: $deepRed;
+      color: white;
+      width: 9rem;
+      height: 3rem;
+      box-sizing: border-box;
+      border-radius: 0.5rem;
+      padding: 1rem 0;
+      margin: 1rem 1rem 1rem 0;
+      vertical-align: bottom;
     }
   }
 }
 
+/*Portfolio divider*/
 
-/*Hobby divider*/
-
-section#hobby-divider {
+article.portfolio-divider {
+  min-height: 40%;
   padding: 0;
-  height: 100%;
-  background-image: url("../images/biblio_light.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  position: relative;
+  background-color: $violetDark;
 }
 
+.portfolio-quote {
+  display: block;
+  border: 3px dashed $brownDark;
+  height: auto;
+  font-size: 1rem;
+  box-sizing: border-box;
+  padding: 3%;
+  background-color: white;
+  border-radius: 2rem;
+  //margin-left: ((100%/12)*2);
+  margin-top: 4rem;
+  @include smartphone {
+    margin: 5%;
+    width: 90%;
+  }
+}
+
+.portfolio-image img {
+  display: block;
+  border-radius: 84px;
+  float: left;
+  margin: 5rem 0;
+  margin-left: 33%;
+  @include smartphone {
+    margin: 0;
+  }
+}
+
+
+/*Past experience*/
+
+
+section#experience {
+  height: auto;
+  padding: 0;
+  background-color: white;
+}
+
+.experience-section-header {
+  color: $brownDark;
+  font-size: 2rem;
+  text-align: center;
+  margin: 7rem 0 5rem 0;
+}
+
+.work-header,
+.education-header {
+  font-size: 1.5rem;
+  color: $grayBrown;
+  margin: 3rem 0 3rem 0;
+  text-align: center;
+}
+
+/*Experience divider*/
+
+article.experience-divider {
+  min-height: 40%;
+  padding: 0;
+  background-color: $violetDark;
+}
+
+.experience-summary {
+  text-align: center;
+  h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 3rem;
+  }
+}
+
+p.summary-circle {
+  color: white;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 5rem;
+  border: 3px solid white;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 4.5rem;
+  margin: 0 auto;
+}
 /*Contact section*/
 
 .contact-section-header {

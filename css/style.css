@@ -405,6 +405,8 @@ section#my-skills {
       width: 80%; } }
   .levels ul {
     text-align: center; }
+    .levels ul:last-of-type {
+      margin-bottom: 6rem; }
     .levels ul li {
       display: inline-block;
       padding: 0 5%;
@@ -506,6 +508,12 @@ section#my-skills {
     width: 25%;
     background-color: #590100; }
 
+/*Skills divider*/
+article.skilled-divider {
+  min-height: 40%;
+  padding: 0;
+  background-color: #431B4A; }
+
 .tips {
   display: block;
   border: 3px dashed #2c1a06;
@@ -513,9 +521,11 @@ section#my-skills {
   font-size: 1rem;
   box-sizing: border-box;
   padding: 3%;
+  background-color: white;
   border-radius: 2rem;
-  margin-left: 33.33333%;
-  margin-top: 3rem; }
+  margin-left: 16.66667%;
+  margin-top: 3rem;
+  text-align: right; }
   @media (max-width: 980px) {
     .tips {
       margin: 5%;
@@ -525,48 +535,130 @@ section#my-skills {
   display: block;
   border-radius: 100px;
   float: right;
-  margin: 5rem 0 6rem 0; }
+  margin: 5.5rem 0 0 0; }
   @media (max-width: 980px) {
     .tips-image img {
       margin: 0; } }
 
 /*Portfolio*/
 section#portfolio {
-  height: 100%;
+  height: auto;
   padding: 0;
-  background-color: #431B4A; }
+  background-color: white; }
 
 .portfolio-section-header {
-  color: white;
+  color: #2c1a06;
   font-size: 2rem;
   text-align: center;
   margin: 7rem 0 5rem 0; }
 
 .division-header {
   font-size: 1.5rem;
-  color: white;
+  color: #8e8272;
   margin: 3rem 0 3rem 0;
   text-align: center; }
 
 .portfolio-item h4 {
   font-size: 1.2rem;
-  color: white;
-  text-align: center;
+  color: #8e8272;
+  margin: 6rem 0 3rem 0; }
+  .portfolio-item h4 span {
+    text-transform: uppercase; }
+.portfolio-item p {
+  font-size: 1rem;
+  color: #8e8272;
   margin-bottom: 3rem; }
-.portfolio-item a {
-  width: 100%; }
-  .portfolio-item a img {
-    width: 100%; }
+  .portfolio-item p a {
+    color: #590100;
+    text-decoration: none; }
+.portfolio-item ul {
+  margin: 0; }
+  .portfolio-item ul li {
+    display: inline-block;
+    text-align: center;
+    background-color: #590100;
+    color: white;
+    width: 9rem;
+    height: 3rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    margin: 1rem 1rem 1rem 0;
+    vertical-align: bottom; }
 
-/*Hobby divider*/
-section#hobby-divider {
+/*Portfolio divider*/
+article.portfolio-divider {
+  min-height: 40%;
   padding: 0;
-  height: 100%;
-  background-image: url("../images/biblio_light.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  position: relative; }
+  background-color: #431B4A; }
+
+.portfolio-quote {
+  display: block;
+  border: 3px dashed #2c1a06;
+  height: auto;
+  font-size: 1rem;
+  box-sizing: border-box;
+  padding: 3%;
+  background-color: white;
+  border-radius: 2rem;
+  margin-top: 4rem; }
+  @media (max-width: 980px) {
+    .portfolio-quote {
+      margin: 5%;
+      width: 90%; } }
+
+.portfolio-image img {
+  display: block;
+  border-radius: 84px;
+  float: left;
+  margin: 5rem 0;
+  margin-left: 33%; }
+  @media (max-width: 980px) {
+    .portfolio-image img {
+      margin: 0; } }
+
+/*Past experience*/
+section#experience {
+  height: auto;
+  padding: 0;
+  background-color: white; }
+
+.experience-section-header {
+  color: #2c1a06;
+  font-size: 2rem;
+  text-align: center;
+  margin: 7rem 0 5rem 0; }
+
+.work-header,
+.education-header {
+  font-size: 1.5rem;
+  color: #8e8272;
+  margin: 3rem 0 3rem 0;
+  text-align: center; }
+
+/*Experience divider*/
+article.experience-divider {
+  min-height: 40%;
+  padding: 0;
+  background-color: #431B4A; }
+
+.experience-summary {
+  text-align: center; }
+  .experience-summary h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 3rem; }
+
+p.summary-circle {
+  color: white;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 5rem;
+  border: 3px solid white;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 4.5rem;
+  margin: 0 auto; }
 
 /*Contact section*/
 .contact-section-header {
