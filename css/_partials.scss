@@ -59,7 +59,6 @@ html {
 
 /*Main page*/
 
-
 section#main-page {
   padding: 0;
   height: 100%;
@@ -691,6 +690,30 @@ section#experience {
   text-align: center;
 }
 
+.experience-main-item {
+  height: 15rem;
+  img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10%;
+  }
+}
+
+.education-item {
+  text-align: center;
+  &:last-of-type {
+    margin-bottom: 5rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+    color: $grayBrown;
+    margin: 1.5rem 0;
+  }
+  p {
+    color: $grayBrown;
+  }
+}
+
 /*Experience divider*/
 
 article.experience-divider {
@@ -782,4 +805,8 @@ img.me {
   a {
     color: $deepRed;
   }
+}
+
+.no-display {
+  display: none;
 }

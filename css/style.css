@@ -636,6 +636,24 @@ section#experience {
   margin: 3rem 0 3rem 0;
   text-align: center; }
 
+.experience-main-item {
+  height: 15rem; }
+  .experience-main-item img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10%; }
+
+.education-item {
+  text-align: center; }
+  .education-item:last-of-type {
+    margin-bottom: 5rem; }
+  .education-item h4 {
+    font-size: 1.2rem;
+    color: #8e8272;
+    margin: 1.5rem 0; }
+  .education-item p {
+    color: #8e8272; }
+
 /*Experience divider*/
 article.experience-divider {
   min-height: 40%;
@@ -711,5 +729,8 @@ img.me {
   text-align: center; }
   .references a {
     color: #590100; }
+
+.no-display {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
