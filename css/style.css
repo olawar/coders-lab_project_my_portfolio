@@ -530,6 +530,34 @@ section#my-skills {
     .tips-image img {
       margin: 0; } }
 
+/*Portfolio*/
+section#portfolio {
+  height: 100%;
+  padding: 0;
+  background-color: #431B4A; }
+
+.portfolio-section-header {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 7rem 0 5rem 0; }
+
+.division-header {
+  font-size: 1.5rem;
+  color: white;
+  margin: 3rem 0 3rem 0;
+  text-align: center; }
+
+.portfolio-item h4 {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem; }
+.portfolio-item a {
+  width: 100%; }
+  .portfolio-item a img {
+    width: 100%; }
+
 /*Hobby divider*/
 section#hobby-divider {
   padding: 0;
