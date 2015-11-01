@@ -9,7 +9,7 @@ body {
 }
 
 html {
-  font-size: 130%;
+  font-size: 100%;
   font-family: latoregular, sans-serif;
   //@include large {
   //  font-size: 24px;
@@ -126,6 +126,27 @@ section#main-page {
   margin-top: -8%;
   z-index: 6;
   text-decoration: none;
+  &:hover {
+    background-color: $brownDark;
+    color: $beigeDark;
+  }
+}
+
+.my-skill-circle {
+  width: 6rem;
+  height: 6rem;
+  display: block;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  background-color: $violetDark;
+  text-decoration: none;
+  color: $beigeLight;
+  text-align: center;
+  padding: 2.25rem 0;
+  font-size: 1rem;
+  margin-top: -10%;
+  margin-left: 25%;
+  z-index: 2;
   &:hover {
     background-color: $brownDark;
     color: $beigeDark;
@@ -538,6 +559,18 @@ section#my-skills {
   }
 }
 
+/*Hobby divider*/
+
+section#hobby-divider {
+  padding: 0;
+  height: 100%;
+  background-image: url("../images/biblio_light.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+
 /*Contact section*/
 
 .contact-section-header {
@@ -584,7 +617,7 @@ img.me {
   border-radius: 5rem;
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 2.5rem 2rem;
   box-sizing: border-box;
   border: 5px dashed $brownDark;
   z-index: 5;
