@@ -9,7 +9,7 @@ body {
 }
 
 html {
-  font-size: 100%;
+  font-size: 130%;
   font-family: latoregular, sans-serif;
   //@include large {
   //  font-size: 24px;
@@ -23,6 +23,9 @@ html {
   //@include smallest {
   //  font-size: 6px;
   //}
+  @include smartphone {
+    font-size: 120%;
+  }
 }
 
 .grid-container {
@@ -62,14 +65,115 @@ html {
 section#main-page {
   padding: 0;
   height: 100%;
-  background-image: url("../images/lapin_bg.jpg");
+  background-image: url("../images/lapin_bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
 }
 
-.about-circle {
+.main-content {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 9rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  border: 5px dashed $brownDark;
+  z-index: 5;
+  margin-top: 10%;
+  margin-left: 50%;
+  h1 {
+    color: $brownDark;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 1.25rem 0;
+  }
+  p {
+    color: $brownDark;
+  }
+  @include smartphone {
+    @include smartphone {
+      width: 15rem;
+      height: 15rem;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      padding: 2rem;
+    }
+  }
+}
+
+.circle-portfolio {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  box-sizing: border-box;
+  background-color: lighten($deepRed, 10%);
+  color: $beigeLight;
+  text-align: center;
+  padding: 3.75rem 1rem;
+  font-size: 2rem;
+  margin-top: -3%;
+  margin-left: 70%;
+  z-index: 6;
+  text-decoration: none;
+  &:hover {
+    background-color: $brownDark;
+    color: $beigeDark;
+  }
+}
+
+.circle-my-skill {
+  width: 6rem;
+  height: 6rem;
+  display: block;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  background-color: $violetDark;
+  text-decoration: none;
+  color: $beigeLight;
+  text-align: center;
+  padding: 2.25rem 0;
+  font-size: 1rem;
+  margin-top: -3%;
+  margin-left: 85%;
+  z-index: 2;
+  &:hover {
+    background-color: $brownDark;
+    color: $beigeDark;
+  }
+  @include smartphone {
+    margin: 0;
+  }
+}
+
+.circle-experience {
+  width: 9rem;
+  height: 9rem;
+  display: block;
+  border-radius: 4.5rem;
+  box-sizing: border-box;
+  background-color: $deepRed;
+  text-decoration: none;
+  color: $beigeLight;
+  text-align: center;
+  padding: 3.5rem 0;
+  font-size: 1.5rem;
+  margin-top: 50%;
+  margin-left: 30%;
+  z-index: 2;
+  &:hover {
+    background-color: $brownDark;
+    color: $beigeDark;
+  }
+  @include smartphone {
+    margin: 0;
+  }
+}
+
+.circle-about {
   display: block;
   width: 6rem;
   height: 6rem;
@@ -92,102 +196,7 @@ section#main-page {
   }
 }
 
-.main-content {
-  width: 18rem;
-  height: 18rem;
-  border-radius: 9rem;
-  background-color: rgba(255, 255, 255, 0.7);
-  text-align: center;
-  padding: 3rem 2rem;
-  box-sizing: border-box;
-  border: 5px dashed $brownDark;
-  z-index: 5;
-  margin-top: 40%;
-  h1 {
-    color: $brownDark;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    margin: 1.25rem 0;
-  }
-  p {
-    color: $brownDark;
-  }
-  @include smartphone {
-    margin: 0;
-  }
-}
-
-.portfolio-circle {
-  display: block;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 5rem;
-  box-sizing: border-box;
-  background-color: lighten($deepRed, 10%);
-  color: $beigeLight;
-  text-align: center;
-  padding: 3.75rem 1rem;
-  font-size: 2rem;
-  margin-top: -8%;
-  z-index: 6;
-  text-decoration: none;
-  &:hover {
-    background-color: $brownDark;
-    color: $beigeDark;
-  }
-  @include smartphone {
-    margin: 0;
-  }
-}
-
-.my-skill-circle {
-  width: 6rem;
-  height: 6rem;
-  display: block;
-  border-radius: 3rem;
-  box-sizing: border-box;
-  background-color: $violetDark;
-  text-decoration: none;
-  color: $beigeLight;
-  text-align: center;
-  padding: 2.25rem 0;
-  font-size: 1rem;
-  margin-top: -10%;
-  margin-left: 25%;
-  z-index: 2;
-  &:hover {
-    background-color: $brownDark;
-    color: $beigeDark;
-  }
-  @include smartphone {
-    margin: 0;
-  }
-}
-
-.experience-circle {
-  width: 9rem;
-  height: 9rem;
-  display: block;
-  border-radius: 4.5rem;
-  box-sizing: border-box;
-  background-color: $deepRed;
-  text-decoration: none;
-  color: $beigeLight;
-  text-align: center;
-  padding: 3.5rem 0;
-  font-size: 1.5rem;
-  margin-top: 30%;
-  z-index: 2;
-  &:hover {
-    background-color: $brownDark;
-    color: $beigeDark;
-  }
-  @include smartphone {
-    margin: 0;
-  }
-}
-
-.contact-circle {
+.circle-contact {
   width: 7rem;
   height: 7rem;
   display: block;
@@ -209,6 +218,27 @@ section#main-page {
     margin: 0;
   }
 }
+
+[class*="circle-"] {
+  @include smartphone{
+    float: left;
+    width: 40%;
+    height: 3rem;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 5%;
+    box-sizing: border-box;
+    background-color: $violetDark;
+    border-radius: 0.25rem;
+  }
+}
+
+.circle-contact {
+  @include smartphone {
+    width: 90%;
+  }
+}
+
 /*Navigation bar*/
 
 nav {
@@ -241,7 +271,11 @@ nav {
       }
     }
   }
+  @include smartphone {
+    display: none;
+  }
 }
+
 
 /*Section about me*/
 
@@ -259,7 +293,8 @@ section#about-me {
   margin-left: 50%;
   @include smartphone {
     margin: 0 5%;
-    width: 90%;
+    padding: 5% 0;
+    box-sizing: border-box;
   }
 }
 
@@ -282,6 +317,10 @@ section#about-me {
     color: lighten($deepRed, 15%);
   }
   }
+  @include smartphone {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 a.skills-circle {
@@ -303,10 +342,13 @@ a.skills-circle {
     background-color: $deepRed;
     color: $beigeDark;
   }
+  @include smartphone {
+    display: none;
+  }
 }
 
 
-/*Skills sub-section*/
+/*Skills section*/
 
 section#my-skills {
   height: auto;
@@ -319,6 +361,10 @@ section#my-skills {
   font-size: 2rem;
   text-align: center;
   margin: 7rem 0 5rem 0;
+  @include smartphone {
+    box-sizing: border-box;
+    padding: 0 5%;
+  }
 }
 
 .technology-header,
@@ -327,6 +373,10 @@ section#my-skills {
   color: $grayBrown;
   margin: 3rem 0 3rem 0;
   text-align: center;
+  @include smartphone {
+    box-sizing: border-box;
+    padding: 0 5%;
+  }
 }
 
 
@@ -336,8 +386,14 @@ section#my-skills {
   width: 50%;
   @include smartphone {
     margin: 3% auto;
-    width: 80%;
+    width: 90%;
     padding: 0 5%;
+    h4 {
+      font-size: 0.7rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
   }
 }
 
@@ -414,10 +470,6 @@ section#my-skills {
 .levels {
   margin: 2% 25%;
   width: 50%;
-  @include smartphone {
-    margin: 3% auto;
-    width: 80%;
-  }
   ul {
     text-align: center;
     &:last-of-type {
@@ -435,6 +487,11 @@ section#my-skills {
         border-left: 1px solid $grayBrown;
       }
     }
+  }
+  @include smartphone {
+    margin: 3% auto;
+    width: 90%;
+    font-size: 0.5rem;
   }
 }
 
@@ -557,8 +614,11 @@ section#my-skills {
 
 article.skilled-divider {
   min-height: 40%;
-  padding: 0;
+  padding: 5% 0;
   background-color: $violetDark;
+  @include smartphone {
+    padding: 10% 0;
+  }
 }
 
 .tips {
@@ -571,11 +631,12 @@ article.skilled-divider {
   background-color: white;
   border-radius: 2rem;
   margin-left: ((100%/12)*2);
-  margin-top: 3rem;
   text-align: right;
   @include smartphone {
     margin: 5%;
     width: 90%;
+    padding: 5%;
+    box-sizing: border-box;
   }
 }
 
@@ -583,9 +644,11 @@ article.skilled-divider {
   display: block;
   border-radius: 100px;
   float: right;
-  margin: 5.5rem 0 0 0;
+  margin-top: 13%;
   @include smartphone {
-    margin: 0;
+    margin: 5%;
+    width: 30%;
+    height: auto;
   }
 }
 
@@ -602,6 +665,10 @@ section#portfolio {
   font-size: 2rem;
   text-align: center;
   margin: 7rem 0 5rem 0;
+  @include smartphone {
+    box-sizing: border-box;
+    padding: 0 5%;
+  }
 }
 
 .division-header {
@@ -609,13 +676,20 @@ section#portfolio {
   color: $grayBrown;
   margin: 3rem 0 3rem 0;
   text-align: center;
+  @include smartphone {
+    box-sizing: border-box;
+    padding: 0 5%;
+  }
 }
 
 .portfolio-item {
   h4 {
     font-size: 1.2rem;
     color: $grayBrown;
-    margin: 6rem 0 3rem 0;
+    margin: 4rem 0 3rem 0;
+    @include smartphone {
+      margin: 2rem 0;
+    }
     span {
       text-transform: uppercase;
     }
@@ -648,9 +722,14 @@ section#portfolio {
   img {
     @include smartphone {
       width: 100%;
+      height: auto;
       padding: 0 10%;
       box-sizing: border-box;
     }
+  }
+  @include smartphone {
+    box-sizing: border-box;
+    padding: 0 5%;
   }
 }
 
@@ -658,8 +737,11 @@ section#portfolio {
 
 article.portfolio-divider {
   min-height: 40%;
-  padding: 0;
   background-color: $violetDark;
+  padding: 5% 0;
+  @include smartphone {
+    padding: 10% 0;
+  }
 }
 
 .portfolio-quote {
@@ -671,11 +753,12 @@ article.portfolio-divider {
   padding: 3%;
   background-color: white;
   border-radius: 2rem;
-  //margin-left: ((100%/12)*2);
-  margin-top: 4rem;
+  margin-left: ((100%/12)*2);
   @include smartphone {
     margin: 5%;
     width: 90%;
+    padding: 5%;
+    box-sizing: border-box;
   }
 }
 
@@ -683,8 +766,7 @@ article.portfolio-divider {
   display: block;
   border-radius: 84px;
   float: left;
-  margin: 5rem 0;
-  margin-left: 33%;
+  margin-top: 13%;
   @include smartphone {
     margin: 0;
   }
@@ -722,6 +804,10 @@ section#experience {
     box-sizing: border-box;
     padding: 10%;
   }
+  @include smartphone {
+    border-bottom: 1px solid $brownDark;
+    height: auto;
+  }
 }
 
 .education-item {
@@ -737,14 +823,20 @@ section#experience {
   p {
     color: $grayBrown;
   }
+  @include smartphone {
+    padding: 0 5%;
+  }
 }
 
 /*Experience divider*/
 
 article.experience-divider {
   min-height: 40%;
-  padding: 0;
   background-color: $violetDark;
+  padding: 5% 0;
+  @include smartphone {
+    padding: 10% 5%;
+  }
 }
 
 .experience-summary {
@@ -752,7 +844,7 @@ article.experience-divider {
   h3 {
     color: white;
     font-size: 1.2rem;
-    margin: 3rem;
+    margin-bottom: 10%;
   }
 }
 
@@ -766,6 +858,11 @@ p.summary-circle {
   text-align: center;
   padding-top: 4.5rem;
   margin: 0 auto;
+  @include smartphone {
+    margin: 10% auto;
+    padding-top: 3.5rem;
+    font-size: 1.5rem;
+  }
 }
 /*Contact section*/
 
@@ -774,6 +871,10 @@ p.summary-circle {
   font-size: 2rem;
   text-align: center;
   margin: 7rem 0 5rem 0;
+  @include smartphone {
+    box-sizing: border-box;
+    padding: 0 5%;
+  }
 }
 
 .contact-data {
@@ -794,6 +895,10 @@ p.summary-circle {
         text-decoration: none;
       }
     }
+  }
+  @include smartphone {
+    box-sizing: border-box;
+    padding: 0 5%;
   }
 }
 
@@ -826,7 +931,7 @@ img.me {
   font-size: 1.2rem;
   margin-top: 140%;
   @include smartphone {
-    margin: 0;
+    display: none;
   }
 }
 
@@ -837,6 +942,11 @@ img.me {
   text-align: center;
   a {
     color: $deepRed;
+  }
+  @include smartphone {
+    box-sizing: border-box;
+    padding: 0 5%;
+    margin: 1rem 0;
   }
 }
 
