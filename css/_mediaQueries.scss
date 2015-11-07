@@ -4,10 +4,10 @@ $breakpoint3: 960px;
 $breakpoint4: 460px;
 $breakpoint5: 860px;
 
-$smartphone-width: "(max-width: 980px)";
+$smartphone-width: "(max-width: 800px)";
 
 @mixin smartphone {
-  @media #{$smartphone-width} {
+  @media #{$smartphone-width} and (orientation: portrait){
     @content;
   }
 }

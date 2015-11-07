@@ -5,7 +5,8 @@
     <title>Aleksandra Warzecha Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="From PR to programming">
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="dist/style.css">
 
     <script src="js/jquery-2.1.4.js"></script>
     <script src="js/app.js"></script>
@@ -13,38 +14,12 @@
 </head>
 <body>
 
-
-
-<section id="main-page">
-
-    <div class="grid-container">
-
-        <div class="col-6">
-            <div class="main-content">
-                <h1>Hello,<br> I'm Ola Warzecha</h1>
-                <!--<p>Programming makes me happy ;)</p>-->
-            </div>
-        </div>
-
-        <div class="arrow-down col-1">
-            <a href="#my-skills"><img src="images/arrowDown.png"></a>
-        </div>
-
-        <div class="col-5">
-            <div class="about-bubble">
-                <p>After almost 8 years<br> as a tech-PR professional I have just started my adventure of being a front-end developer.</p>
-                <p><strong>See how I'm doing!</strong></p>
-            </div>
-        </div>
-
-        <div class="clear"></div>
-
+<div class="menu-button">
+    <div class="desktop-button">
+        <button type="button"><img src="images/hamburger.png" alt="menu sign"></button>
     </div>
 
-</section>
-
-
-<nav class="sticky-nav">
+<nav class="sticky-nav desktop-view">
 
     <div class="grid-container">
 
@@ -64,13 +39,45 @@
     </div>
 
 </nav>
+    </div>
+
+<section id="main-page">
+
+    <div class="grid-container">
+
+        <div class="col-6">
+            <div class="main-content">
+                <h1>Hello,<br> I'm Ola Warzecha</h1>
+                <!--<p>Programming makes me happy ;)</p>-->
+            </div>
+        </div>
+
+        <div class="arrow-down col-1">
+            <a href="#my-skills"><img src="images/arrowDown.png" alt="arrow pointing down" height="32" width="32"></a>
+        </div>
+
+        <div class="col-5">
+            <div class="about-bubble">
+                <p>After almost 8 years<br> as a tech-PR professional I have just started my adventure of being a front-end developer.</p>
+                <p><strong>See how I'm doing!</strong></p>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+
+</section>
+
+
+
 
 <section id="my-skills">
 
     <div class="grid-container">
 
         <div class="col-12">
-            <h2 class="section-header-skills col-12">My current programming skills</h2>
+            <h2 class="section-header-skills col-12">My programming skills</h2>
         </div>
 
         <div class="clear"></div>
@@ -201,7 +208,7 @@
         </div>
 
         <div class="tips-image col-2">
-            <img src="images/treeson2.jpg" alt="treeson" height="200" width="200">
+            <img src="images/treeson2.jpg" alt="treeson photo" height="200" width="200">
         </div>
 
         <div class="clear"></div>
@@ -295,7 +302,7 @@
         </div>
 
         <div class="tips-image col-2">
-            <img src="images/jija.jpg" alt="jija" height="168" width="168">
+            <img src="images/jija.jpg" alt="jija bird photo" height="168" width="168">
         </div>
 
         <div class="clear"></div>
@@ -335,7 +342,7 @@
             <ul>
                 <li class="experience-items">
                     <figure class="col-6">
-                        <img src="images/hill-knowlton.png">
+                        <img src="images/hill-knowlton.png" alt="hill and knowlton strategies logo">
                     </figure>
 
                     <article class="col-6">
@@ -352,7 +359,7 @@
 
                 <li class="experience-items">
                     <figure class="col-6">
-                        <img src="images/HAVASPRWarsaw.jpg">
+                        <img src="images/HAVASPRWarsaw.jpg" alt="havas logo">
                     </figure>
 
                     <article class="col-6">
@@ -366,7 +373,7 @@
 
                 <li class="experience-items">
                     <figure class="col-6">
-                        <img src="images/neuron_logo.jpg">
+                        <img src="images/neuron_logo.jpg" alt="neuron logo">
                     </figure>
 
                     <article class="col-6">
@@ -423,22 +430,22 @@
         </div>
 
         <div class="summary-item col-3">
-            <img src="images/teamwork.png">
+            <img src="images/teamwork.png" alt="teamwork icon" height="128" width="128">
             <p>Teamwork</p>
         </div>
 
         <div class="summary-item col-3">
-            <img src="images/projection3.png">
+            <img src="images/projection3.png" alt="project management icon" height="128" width="128">
             <p>Project management</p>
         </div>
 
         <div class="summary-item col-3">
-            <img src="images/thinking.png">
+            <img src="images/thinking.png" alt="thinking icon" height="128" width="128">
             <p>Strategic thinking</p>
         </div>
 
         <div class="summary-item col-3">
-            <img src="images/stress.png">
+            <img src="images/stress.png" alt="free of stress icon" height="128" width="128">
             <p>Stress management</p>
         </div>
 
@@ -465,18 +472,18 @@
             <h3 class="division-header">Social media</h3>
             <ul>
                 <li>GitHub: <a href="https://github.com/olawar" target="_blank">https://github.com/olawar</a></li>
-                <li class="social-icons"><a href="https://pl.linkedin.com/in/awarzecha" target="_blank"><img src="images/LinkedIn_logo_initials.png"></a></li>
-                <li class="social-icons"><a href="https://www.facebook.com/aleksandra.warzecha" target="_blank"><img src="images/Facebook_logo_2014.gif"></a></li>
+                <li class="social-icons"><a href="https://pl.linkedin.com/in/awarzecha" target="_blank"><img src="images/LinkedIn_logo_initials.png" alt="linked in logo" height="32" width="32"></a></li>
+                <li class="social-icons"><a href="https://www.facebook.com/aleksandra.warzecha" target="_blank"><img src="images/Facebook_logo_2014.gif" alt="facebook logo" height="32" width="32"></a></li>
             </ul>
         </div>
 
         <div class="col-5">
-            <img class="me" src="images/olawar2.jpg" alt="photo of me" height="400" width="400">
+            <img class="me" src="images/olawar2.jpg" alt="photo of Ola Warzecha" height="400" width="400">
         </div>
 
 
         <footer class="references col-12">
-            <p>Copyright &copy 2015 Aleksandra Warzecha Awar. All Rights Reserved.</p>
+            <p>Copyright &copy; 2015 Aleksandra Warzecha Awar. All Rights Reserved.</p>
             <p>Photos of designer toys from my collections: Petit Lapin and Ji Ja by <a href="http://www.mrclement.com/">Mr Clement</a>, Treeson by <a href="http://www.milkjar.com/treeson/">Bubi Au Yeung</a>.</p>
             <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/daniel-bruce" title="Daniel Bruce">Daniel Bruce</a> and <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
         </footer>

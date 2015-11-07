@@ -1,6 +1,20 @@
 
 var Application = function(){
 
+    function mobileMenu(){
+
+        //navigation for mobile devices
+
+        if(window.matchMedia("(max-width: 800px)").matches){
+            $(".desktop-button").addClass("smartphone-button").removeClass("desktop-button");
+            $("nav").removeClass("desktop-view").addClass("smartphone-view").addClass("click-class");
+            $("button").on("click", function(){
+                $("nav").toggleClass("click-class");
+            });
+        }
+    }
+
+
     function stickyMenu(){
 
         //sticky menu function
@@ -19,6 +33,28 @@ var Application = function(){
             }
         });
     }
+
+
+    function stickyMobileMenu(){
+
+        //sticky menu function
+
+        var menu = $(".menu-button");
+        var lastPositionTop = 0;
+
+
+        $(window).on("scroll", function(){
+            if(menu.hasClass("sticky") === false && $(this).scrollTop() > menu.offset().top){
+                lastPositionTop = menu.offset().top;
+                menu.addClass("sticky");
+            }
+            if(menu.hasClass("sticky") && $(this).scrollTop() < lastPositionTop){
+                menu.removeClass("sticky");
+            }
+        });
+    }
+
+
 
     function experienceSlider(){
         var images = $("li.experience-items");
@@ -46,7 +82,9 @@ var Application = function(){
     }
 
     return{
+        mobileMenu:mobileMenu,
         stickyMenu:stickyMenu,
+        stickyMobileMenu:stickyMobileMenu,
         experienceSlider:experienceSlider
     }
 };
@@ -56,8 +94,11 @@ var Application = function(){
 
 $(function(){
 
+
     var app = new Application();
+    app.mobileMenu();
     app.stickyMenu();
+    app.stickyMobileMenu();
     app.experienceSlider();
 
 

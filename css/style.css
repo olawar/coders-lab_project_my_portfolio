@@ -57,9 +57,9 @@ body {
 html {
   font-size: 100%;
   font-family: latoregular, sans-serif; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     html {
-      font-size: 120%; } }
+      font-size: 80%; } }
 
 .grid-container {
   width: 100%;
@@ -111,7 +111,7 @@ html {
   float: left;
   min-height: 1px;
   /*gutter*/ }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     [class*="col-"] {
       float: none;
       width: 100%; } }
@@ -121,7 +121,7 @@ html {
   text-align: center;
   font-size: 2rem;
   color: #2c1a06; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     [class*="section-header-"] {
       box-sizing: border-box;
       padding: 0 5%; } }
@@ -131,10 +131,85 @@ html {
   text-align: center;
   font-size: 1.5rem;
   color: #8e8272; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     .division-header {
       box-sizing: border-box;
       padding: 0 5%; } }
+
+/*Navigation bar*/
+.desktop-button {
+  display: none; }
+
+.smartphone-button {
+  background-color: black;
+  display: block;
+  width: 100%;
+  height: auto; }
+  .smartphone-button button {
+    border: none;
+    background-color: black;
+    outline: 0;
+    box-shadow: none; }
+
+.desktop-view {
+  background-color: white;
+  width: 100%;
+  height: 8%;
+  border-bottom: 1px solid #8e8272; }
+  .desktop-view ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 2% 4% 2% 0;
+    z-index: 1000; }
+    .desktop-view ul li:last-of-type {
+      float: right;
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: black;
+      padding-top: 1%; }
+    .desktop-view ul li a {
+      text-decoration: none;
+      color: #8e8272; }
+      .desktop-view ul li a:hover {
+        color: #590100; }
+  @media (max-width: 800px) and (orientation: portrait) {
+    .desktop-view {
+      display: none; } }
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99999999; }
+
+.smartphone-view {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  width: 100%; }
+  .smartphone-view ul li {
+    background-color: black;
+    height: 3rem;
+    padding-top: 1.5rem; }
+    .smartphone-view ul li a:link {
+      text-decoration: none;
+      color: white; }
+    .smartphone-view ul li a:visited {
+      text-decoration: none;
+      color: white; }
+    .smartphone-view ul li:last-of-type {
+      text-align: right;
+      font-size: 1.3rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: white; }
+
+.click-class {
+  display: none; }
 
 /*Main page*/
 section#main-page {
@@ -145,6 +220,10 @@ section#main-page {
   background-repeat: no-repeat;
   width: 100%;
   position: relative; }
+  @media (max-width: 800px) and (orientation: portrait) {
+    section#main-page {
+      padding-top: 15%;
+      box-sizing: border-box; } }
 
 .main-content {
   width: 18rem;
@@ -156,7 +235,7 @@ section#main-page {
   box-sizing: border-box;
   border: 5px dashed #2c1a06;
   z-index: 5;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 60%; }
   .main-content h1 {
     color: #2c1a06;
@@ -165,7 +244,7 @@ section#main-page {
     margin: 1.25rem 0; }
   .main-content p {
     color: #2c1a06; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     .main-content {
       width: 15rem;
       height: 15rem;
@@ -179,14 +258,28 @@ section#main-page {
   height: 20rem;
   width: 20rem;
   text-align: center;
-  margin-top: 55%;
+  margin-top: 62%;
   border-radius: 10rem;
   box-sizing: border-box;
   padding: 5rem 1.5rem;
   line-height: 1.5rem;
   font-size: 1.3rem; }
+  @media (max-width: 800px) and (orientation: portrait) {
+    .about-bubble {
+      width: 90%;
+      height: auto;
+      border-radius: 5%;
+      margin: 10% 5% 0 5%;
+      box-sizing: border-box;
+      padding: 5%;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #2c1a06;
+      font-size: 1.7rem; } }
   .about-bubble p {
     margin-bottom: 10%; }
+    @media (max-width: 800px) and (orientation: portrait) {
+      .about-bubble p {
+        margin-bottom: 5%; } }
 
 .arrow-down {
   height: 64px;
@@ -197,41 +290,9 @@ section#main-page {
   margin-top: 50%;
   padding: 20px 16px 12px 16px;
   margin-left: -5%; }
-
-/*Navigation bar*/
-nav {
-  background-color: white;
-  width: 100%;
-  height: 11%;
-  border-bottom: 1px solid #8e8272; }
-  nav ul li {
-    display: inline-block;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1rem;
-    box-sizing: border-box;
-    padding: 3% 4% 3% 0;
-    z-index: 1000; }
-    nav ul li:last-of-type {
-      float: right;
-      font-size: 2rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      color: black;
-      padding-top: 2%; }
-    nav ul li a {
-      text-decoration: none;
-      color: #8e8272; }
-      nav ul li a:hover {
-        color: #590100; }
-  @media (max-width: 980px) {
-    nav {
+  @media (max-width: 800px) and (orientation: portrait) {
+    .arrow-down {
       display: none; } }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  z-index: 99999999; }
 
 /*Skills section*/
 section#my-skills {
@@ -243,7 +304,7 @@ section#my-skills {
 [class*="skills-"] {
   margin: 2% 25%;
   width: 50%; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     [class*="tech-"],
     [class*="skills-"] {
       margin: 3% auto;
@@ -327,7 +388,7 @@ section#my-skills {
       border-right: 1px solid #8e8272; }
       .levels ul li:first-of-type {
         border-left: 1px solid #8e8272; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     .levels {
       margin: 3% auto;
       width: 90%;
@@ -425,10 +486,10 @@ section#my-skills {
 
 /*Skills divider*/
 article.skilled-divider {
-  min-height: 30%;
+  min-height: 20%;
   padding: 2% 0;
   background-color: #431B4A; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     article.skilled-divider {
       padding: 10% 0; } }
 
@@ -442,7 +503,7 @@ article.skilled-divider {
   border-radius: 2rem;
   margin-left: 16.66667%;
   text-align: right; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     .tips {
       margin: 5%;
       width: 90%;
@@ -452,9 +513,8 @@ article.skilled-divider {
 .tips-image img {
   display: block;
   border-radius: 100px;
-  float: right;
-  padding: 3%; }
-  @media (max-width: 980px) {
+  float: right; }
+  @media (max-width: 800px) and (orientation: portrait) {
     .tips-image img {
       margin: 5%;
       width: 30%;
@@ -470,7 +530,7 @@ section#portfolio {
   font-size: 1.2rem;
   color: #8e8272;
   margin: 7% 0; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     .portfolio-item h4 {
       margin: 2rem 0; } }
   .portfolio-item h4 span {
@@ -496,23 +556,23 @@ section#portfolio {
     padding: 1rem 0;
     margin: 1rem 1rem 1rem 0;
     vertical-align: bottom; }
-@media (max-width: 980px) {
+@media (max-width: 800px) and (orientation: portrait) {
   .portfolio-item img {
     width: 100%;
     height: auto;
     padding: 0 10%;
     box-sizing: border-box; } }
-@media (max-width: 980px) {
+@media (max-width: 800px) and (orientation: portrait) {
   .portfolio-item {
     box-sizing: border-box;
     padding: 0 5%; } }
 
 /*Portfolio divider*/
 article.portfolio-divider {
-  min-height: 30%;
+  min-height: 20%;
   background-color: #431B4A;
   padding: 2% 0; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     article.portfolio-divider {
       padding: 10% 0; } }
 
@@ -525,7 +585,7 @@ article.portfolio-divider {
   background-color: white;
   border-radius: 2rem;
   margin-left: 16.66667%; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     .portfolio-quote {
       margin: 5%;
       width: 90%;
@@ -534,10 +594,8 @@ article.portfolio-divider {
 
 .portfolio-image img {
   display: block;
-  border-radius: 84px;
-  float: left;
-  padding: 3%; }
-  @media (max-width: 980px) {
+  border-radius: 84px; }
+  @media (max-width: 800px) and (orientation: portrait) {
     .portfolio-image img {
       margin: 0; } }
 
@@ -552,22 +610,37 @@ section#experience {
   text-align: right;
   padding-right: 5%;
   box-sizing: border-box; }
+  @media (max-width: 800px) and (orientation: portrait) {
+    .arrow-left {
+      width: 50%;
+      float: left; } }
 
 .arrow-right {
   padding-left: 5%;
   box-sizing: border-box; }
+  @media (max-width: 800px) and (orientation: portrait) {
+    .arrow-right {
+      width: 50%;
+      float: left; } }
 
 .experience-container {
   height: 16rem;
   margin: 5% auto; }
+  @media (max-width: 800px) and (orientation: portrait) {
+    .experience-container {
+      height: 34rem; } }
 
 li.experience-items {
   display: none; }
   li.experience-items figure {
     text-align: right; }
     li.experience-items figure img {
-      padding: 10% 3%;
+      padding: 7% 3%;
       box-sizing: border-box; }
+      @media (max-width: 800px) and (orientation: portrait) {
+        li.experience-items figure img {
+          width: 90%;
+          margin: 5%; } }
   li.experience-items article {
     color: #8e8272;
     line-height: 1.75rem;
@@ -575,6 +648,10 @@ li.experience-items {
     box-sizing: border-box; }
     li.experience-items article h4 {
       color: #2c1a06; }
+    @media (max-width: 800px) and (orientation: portrait) {
+      li.experience-items article {
+        width: 90%;
+        margin: 0 5%; } }
 
 .education-item {
   text-align: center; }
@@ -586,16 +663,16 @@ li.experience-items {
     margin: 1.5rem 0; }
   .education-item p {
     color: #8e8272; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     .education-item {
       padding: 0 5%; } }
 
 /*Experience divider*/
 article.experience-divider {
-  min-height: 30%;
+  min-height: 20%;
   background-color: #431B4A;
   padding: 2% 0; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     article.experience-divider {
       padding: 10% 5%; } }
 
@@ -612,9 +689,15 @@ article.experience-divider {
   text-align: center; }
   .summary-item p {
     margin: 5% 0; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
+    .summary-item img {
+      width: 30%;
+      height: auto; } }
+  @media (max-width: 800px) and (orientation: portrait) {
     .summary-item {
-      margin: 10% auto; } }
+      width: 50%;
+      float: left;
+      margin: 7% 0; } }
 
 /*Contact section*/
 .contact-data ul {
@@ -626,7 +709,7 @@ article.experience-divider {
     .contact-data ul li a {
       color: #590100;
       text-decoration: none; }
-@media (max-width: 980px) {
+@media (max-width: 800px) and (orientation: portrait) {
   .contact-data {
     box-sizing: border-box;
     padding: 0 5%; } }
@@ -637,7 +720,7 @@ li.social-icons {
 
 img.me {
   border-radius: 200px; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     img.me {
       width: 100%;
       height: auto;
@@ -650,7 +733,7 @@ img.me {
   text-align: center; }
   .references a {
     color: #590100; }
-  @media (max-width: 980px) {
+  @media (max-width: 800px) and (orientation: portrait) {
     .references {
       box-sizing: border-box;
       padding: 0 5%;
