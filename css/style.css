@@ -57,7 +57,16 @@ body {
 html {
   font-size: 100%;
   font-family: latoregular, sans-serif; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
+    html {
+      font-size: 80%; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    html {
+      font-size: 100%; } }
+  @media (min-width: 1921px) {
+    html {
+      font-size: 150%; } }
+  @media (max-width: 599px) and (orientation: landscape) {
     html {
       font-size: 80%; } }
 
@@ -111,7 +120,7 @@ html {
   float: left;
   min-height: 1px;
   /*gutter*/ }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     [class*="col-"] {
       float: none;
       width: 100%; } }
@@ -121,7 +130,7 @@ html {
   text-align: center;
   font-size: 2rem;
   color: #2c1a06; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     [class*="section-header-"] {
       box-sizing: border-box;
       padding: 0 5%; } }
@@ -131,7 +140,7 @@ html {
   text-align: center;
   font-size: 1.5rem;
   color: #8e8272; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     .division-header {
       box-sizing: border-box;
       padding: 0 5%; } }
@@ -176,7 +185,7 @@ html {
       color: #8e8272; }
       .desktop-view ul li a:hover {
         color: #590100; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     .desktop-view {
       display: none; } }
 
@@ -220,9 +229,19 @@ section#main-page {
   background-repeat: no-repeat;
   width: 100%;
   position: relative; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     section#main-page {
       padding-top: 15%;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    section#main-page {
+      padding: 10% 0 0 8.33333%;
+      box-sizing: border-box;
+      margin: 0 auto; } }
+  @media (max-width: 599px) and (orientation: landscape) {
+    section#main-page {
+      padding: 10% 0 0 8.33333%;
+      margin: 0 auto;
       box-sizing: border-box; } }
 
 .main-content {
@@ -237,6 +256,37 @@ section#main-page {
   z-index: 5;
   margin-top: 15%;
   margin-left: 60%; }
+  @media (max-width: 599px) and (orientation: portrait) {
+    .main-content {
+      width: 15rem;
+      height: 15rem;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      padding: 2rem; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    .main-content {
+      width: 100%;
+      height: 12rem;
+      border-radius: 5%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 5%;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #2c1a06;
+      font-size: 1.2rem;
+      border: 0; } }
+  @media (max-width: 599px) and (orientation: landscape) {
+    .main-content {
+      width: 100%;
+      height: 12rem;
+      border-radius: 5%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 5%;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #2c1a06;
+      font-size: 1.2rem;
+      border: 0; } }
   .main-content h1 {
     color: #2c1a06;
     font-size: 2.5rem;
@@ -244,13 +294,6 @@ section#main-page {
     margin: 1.25rem 0; }
   .main-content p {
     color: #2c1a06; }
-  @media (max-width: 800px) and (orientation: portrait) {
-    .main-content {
-      width: 15rem;
-      height: 15rem;
-      margin: 0 auto;
-      font-size: 1.2rem;
-      padding: 2rem; } }
 
 .about-bubble {
   background-color: #431B4A;
@@ -264,7 +307,18 @@ section#main-page {
   padding: 5rem 1.5rem;
   line-height: 1.5rem;
   font-size: 1.3rem; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  .about-bubble p {
+    margin-bottom: 10%; }
+    @media (max-width: 599px) and (orientation: portrait) {
+      .about-bubble p {
+        margin-bottom: 5%; } }
+    @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+      .about-bubble p {
+        margin-bottom: 0; } }
+    @media (max-width: 599px) and (orientation: landscape) {
+      .about-bubble p {
+        margin-bottom: 0; } }
+  @media (max-width: 599px) and (orientation: portrait) {
     .about-bubble {
       width: 90%;
       height: auto;
@@ -275,11 +329,35 @@ section#main-page {
       background-color: rgba(255, 255, 255, 0.7);
       color: #2c1a06;
       font-size: 1.7rem; } }
-  .about-bubble p {
-    margin-bottom: 10%; }
-    @media (max-width: 800px) and (orientation: portrait) {
-      .about-bubble p {
-        margin-bottom: 5%; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    .about-bubble {
+      width: 100%;
+      height: 12rem;
+      border-radius: 5%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 5%;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #2c1a06;
+      font-size: 1.2rem; } }
+  @media (max-width: 599px) and (orientation: landscape) {
+    .about-bubble {
+      width: 100%;
+      height: 12rem;
+      border-radius: 5%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 5%;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #2c1a06;
+      font-size: 1.2rem; } }
+  @media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+    .about-bubble {
+      margin-top: 95%;
+      margin-left: -50%;
+      background-color: rgba(255, 255, 255, 0.7);
+      z-index: 1;
+      color: #2c1a06; } }
 
 .arrow-down {
   height: 64px;
@@ -290,7 +368,16 @@ section#main-page {
   margin-top: 50%;
   padding: 20px 16px 12px 16px;
   margin-left: -5%; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
+    .arrow-down {
+      display: none; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    .arrow-down {
+      display: none; } }
+  @media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+    .arrow-down {
+      margin-top: 90%; } }
+  @media (max-width: 599px) and (orientation: landscape) {
     .arrow-down {
       display: none; } }
 
@@ -304,7 +391,7 @@ section#my-skills {
 [class*="skills-"] {
   margin: 2% 25%;
   width: 50%; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     [class*="tech-"],
     [class*="skills-"] {
       margin: 3% auto;
@@ -388,11 +475,26 @@ section#my-skills {
       border-right: 1px solid #8e8272; }
       .levels ul li:first-of-type {
         border-left: 1px solid #8e8272; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     .levels {
       margin: 3% auto;
       width: 90%;
       font-size: 0.5rem; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    .levels {
+      font-size: 0.7rem;
+      margin: 3% auto;
+      width: 90%; } }
+  @media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+    .levels {
+      font-size: 0.7rem;
+      margin: 3% auto;
+      width: 90%; } }
+  @media (max-width: 599px) and (orientation: landscape) {
+    .levels {
+      font-size: 0.7rem;
+      margin: 3% auto;
+      width: 90%; } }
 
 .skills-rwd {
   color: #8e8272;
@@ -489,7 +591,7 @@ article.skilled-divider {
   min-height: 20%;
   padding: 2% 0;
   background-color: #431B4A; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     article.skilled-divider {
       padding: 10% 0; } }
 
@@ -503,21 +605,40 @@ article.skilled-divider {
   border-radius: 2rem;
   margin-left: 16.66667%;
   text-align: right; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  .tips p a {
+    text-decoration: none;
+    color: #431B4A; }
+  @media (max-width: 599px) and (orientation: portrait) {
     .tips {
       margin: 5%;
       width: 90%;
+      padding: 5%;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    .tips {
+      margin: 5%;
+      width: 60%;
       padding: 5%;
       box-sizing: border-box; } }
 
 .tips-image img {
   display: block;
   border-radius: 100px;
-  float: right; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  float: right;
+  margin-left: 1rem; }
+  @media (max-width: 1100px) {
+    .tips-image img {
+      width: 100%;
+      height: auto; } }
+  @media (max-width: 599px) and (orientation: portrait) {
     .tips-image img {
       margin: 5%;
       width: 30%;
+      height: auto; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    .tips-image img {
+      margin: 30% 0;
+      width: 100%;
       height: auto; } }
 
 /*Portfolio*/
@@ -526,53 +647,101 @@ section#portfolio {
   padding: 0;
   background-color: white; }
 
-.portfolio-item h4 {
-  font-size: 1.2rem;
-  color: #8e8272;
-  margin: 7% 0; }
-  @media (max-width: 800px) and (orientation: portrait) {
-    .portfolio-item h4 {
-      margin: 2rem 0; } }
-  .portfolio-item h4 span {
-    text-transform: uppercase; }
-.portfolio-item p {
-  font-size: 1rem;
-  color: #8e8272;
-  margin-bottom: 7%; }
-  .portfolio-item p a {
-    color: #590100;
-    text-decoration: none; }
-.portfolio-item ul {
-  margin: 0; }
-  .portfolio-item ul li {
-    display: inline-block;
-    text-align: center;
-    background-color: #590100;
-    color: white;
-    width: 9rem;
-    height: 3rem;
-    box-sizing: border-box;
-    border-radius: 0.5rem;
-    padding: 1rem 0;
-    margin: 1rem 1rem 1rem 0;
-    vertical-align: bottom; }
-@media (max-width: 800px) and (orientation: portrait) {
-  .portfolio-item img {
-    width: 100%;
-    height: auto;
-    padding: 0 10%;
-    box-sizing: border-box; } }
-@media (max-width: 800px) and (orientation: portrait) {
+.portfolio-item img {
+  box-sizing: border-box;
+  padding: 0 5%;
+  width: 100%;
+  height: auto; }
+  @media (max-width: 599px) and (orientation: portrait) {
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      padding: 0 10%;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 10%; } }
+  @media (max-width: 599px) and (orientation: landscape) {
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 10%; } }
+@media (max-width: 599px) and (orientation: portrait) {
   .portfolio-item {
     box-sizing: border-box;
     padding: 0 5%; } }
+@media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+  .portfolio-item {
+    box-sizing: border-box;
+    padding: 0 5%; } }
+@media (max-width: 599px) and (orientation: landscape) {
+  .portfolio-item {
+    box-sizing: border-box;
+    padding: 0 5%; } }
+
+.portfolio-description {
+  box-sizing: border-box;
+  height: auto;
+  padding: 5% 5% 0 5%; }
+  .portfolio-description h4 {
+    font-size: 1.2rem;
+    color: #8e8272;
+    margin: 7% 0; }
+    @media (max-width: 599px) and (orientation: portrait) {
+      .portfolio-description h4 {
+        margin: 2rem 0; } }
+    .portfolio-description h4 span {
+      text-transform: uppercase; }
+  .portfolio-description p {
+    font-size: 1rem;
+    color: #8e8272;
+    margin-bottom: 7%; }
+    .portfolio-description p a {
+      color: #590100;
+      text-decoration: none; }
+  .portfolio-description ul {
+    margin: 0; }
+    .portfolio-description ul li {
+      display: inline-block;
+      text-align: center;
+      background-color: #590100;
+      color: white;
+      width: 9rem;
+      height: 3rem;
+      box-sizing: border-box;
+      border-radius: 0.5rem;
+      padding: 1rem 0;
+      margin: 1rem 1rem 1rem 0;
+      vertical-align: bottom; }
+      @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+        .portfolio-description ul li {
+          width: 8rem;
+          height: 2rem;
+          font-size: 0.7rem;
+          padding: 0.7rem;
+          margin: 0.5rem 0.5rem 0.5rem 0; } }
+      @media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+        .portfolio-description ul li {
+          margin: 0.5rem 0.5rem 0.5rem 0;
+          width: 8rem; } }
+      @media (max-width: 599px) and (orientation: landscape) {
+        .portfolio-description ul li {
+          width: 8rem;
+          height: 2rem;
+          font-size: 0.7rem;
+          padding: 0.7rem;
+          margin: 0.5rem 0.5rem 0.5rem 0; } }
 
 /*Portfolio divider*/
 article.portfolio-divider {
   min-height: 20%;
   background-color: #431B4A;
   padding: 2% 0; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     article.portfolio-divider {
       padding: 10% 0; } }
 
@@ -585,19 +754,37 @@ article.portfolio-divider {
   background-color: white;
   border-radius: 2rem;
   margin-left: 16.66667%; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     .portfolio-quote {
       margin: 5%;
       width: 90%;
       padding: 5%;
       box-sizing: border-box; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    .portfolio-quote {
+      margin: 5%;
+      width: 60%;
+      padding: 5%;
+      box-sizing: border-box; } }
 
 .portfolio-image img {
   display: block;
-  border-radius: 84px; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  border-radius: 84px;
+  margin-left: 1rem; }
+  @media (max-width: 1100px) {
     .portfolio-image img {
-      margin: 0; } }
+      width: 100%;
+      height: auto; } }
+  @media (max-width: 599px) and (orientation: portrait) {
+    .portfolio-image img {
+      margin: 5%;
+      width: 30%;
+      height: auto; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    .portfolio-image img {
+      margin: 40% 0;
+      width: 100%;
+      height: auto; } }
 
 /*Past experience*/
 section#experience {
@@ -609,16 +796,18 @@ section#experience {
 .arrow-left {
   text-align: right;
   padding-right: 5%;
-  box-sizing: border-box; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  box-sizing: border-box;
+  cursor: pointer; }
+  @media (max-width: 599px) and (orientation: portrait) {
     .arrow-left {
       width: 50%;
       float: left; } }
 
 .arrow-right {
   padding-left: 5%;
-  box-sizing: border-box; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  box-sizing: border-box;
+  cursor: pointer; }
+  @media (max-width: 599px) and (orientation: portrait) {
     .arrow-right {
       width: 50%;
       float: left; } }
@@ -626,9 +815,12 @@ section#experience {
 .experience-container {
   height: 16rem;
   margin: 5% auto; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     .experience-container {
       height: 34rem; } }
+  @media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+    .experience-container {
+      height: 25rem; } }
 
 li.experience-items {
   display: none; }
@@ -637,7 +829,19 @@ li.experience-items {
     li.experience-items figure img {
       padding: 7% 3%;
       box-sizing: border-box; }
-      @media (max-width: 800px) and (orientation: portrait) {
+      @media (max-width: 599px) and (orientation: portrait) {
+        li.experience-items figure img {
+          width: 90%;
+          margin: 5%; } }
+      @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+        li.experience-items figure img {
+          width: 90%;
+          margin: 5%; } }
+      @media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+        li.experience-items figure img {
+          width: 90%;
+          margin: 5%; } }
+      @media (max-width: 599px) and (orientation: landscape) {
         li.experience-items figure img {
           width: 90%;
           margin: 5%; } }
@@ -648,10 +852,25 @@ li.experience-items {
     box-sizing: border-box; }
     li.experience-items article h4 {
       color: #2c1a06; }
-    @media (max-width: 800px) and (orientation: portrait) {
+    @media (max-width: 599px) and (orientation: portrait) {
       li.experience-items article {
         width: 90%;
         margin: 0 5%; } }
+    @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+      li.experience-items article {
+        width: 50%;
+        padding: 5%;
+        box-sizing: border-box; } }
+    @media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+      li.experience-items article {
+        width: 50%;
+        padding: 5%;
+        box-sizing: border-box; } }
+    @media (max-width: 599px) and (orientation: landscape) {
+      li.experience-items article {
+        width: 50%;
+        padding: 5%;
+        box-sizing: border-box; } }
 
 .education-item {
   text-align: center; }
@@ -663,7 +882,7 @@ li.experience-items {
     margin: 1.5rem 0; }
   .education-item p {
     color: #8e8272; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     .education-item {
       padding: 0 5%; } }
 
@@ -672,9 +891,12 @@ article.experience-divider {
   min-height: 20%;
   background-color: #431B4A;
   padding: 2% 0; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     article.experience-divider {
       padding: 10% 5%; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    article.experience-divider {
+      padding: 5%; } }
 
 .experience-summary {
   text-align: center; }
@@ -689,15 +911,35 @@ article.experience-divider {
   text-align: center; }
   .summary-item p {
     margin: 5% 0; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     .summary-item img {
       width: 30%;
       height: auto; } }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    .summary-item img {
+      width: 40%;
+      height: auto; } }
+  @media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+    .summary-item img {
+      width: 40%;
+      height: auto; } }
+  @media (max-width: 599px) and (orientation: landscape) {
+    .summary-item img {
+      width: 40%;
+      height: auto; } }
+  @media (max-width: 599px) and (orientation: portrait) {
     .summary-item {
       width: 50%;
       float: left;
       margin: 7% 0; } }
+  @media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+    .summary-item {
+      width: 25%;
+      height: auto; } }
+  @media (max-width: 599px) and (orientation: landscape) {
+    .summary-item {
+      width: 25%;
+      height: auto; } }
 
 /*Contact section*/
 .contact-data ul {
@@ -709,7 +951,7 @@ article.experience-divider {
     .contact-data ul li a {
       color: #590100;
       text-decoration: none; }
-@media (max-width: 800px) and (orientation: portrait) {
+@media (max-width: 599px) and (orientation: portrait) {
   .contact-data {
     box-sizing: border-box;
     padding: 0 5%; } }
@@ -720,11 +962,29 @@ li.social-icons {
 
 img.me {
   border-radius: 200px; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     img.me {
       width: 100%;
       height: auto;
       border-radius: 0; } }
+  @media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+    img.me {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 5%; } }
+  @media (min-width: 600px) and (max-width: 800px) and (orientation: portrait) {
+    img.me {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 5%; } }
+  @media (max-width: 599px) and (orientation: landscape) {
+    img.me {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 5%; } }
 
 .references {
   margin: 7% 0;
@@ -733,7 +993,7 @@ img.me {
   text-align: center; }
   .references a {
     color: #590100; }
-  @media (max-width: 800px) and (orientation: portrait) {
+  @media (max-width: 599px) and (orientation: portrait) {
     .references {
       box-sizing: border-box;
       padding: 0 5%;

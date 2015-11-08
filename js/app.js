@@ -3,7 +3,7 @@ var Application = function(){
 
     function mobileMenu(){
 
-        //navigation for mobile devices
+        //navigation for mobile devices - hamburger menu
 
         if(window.matchMedia("(max-width: 800px)").matches){
             $(".desktop-button").addClass("smartphone-button").removeClass("desktop-button");
@@ -13,6 +13,12 @@ var Application = function(){
             });
         }
     }
+
+    var mobileMenuLinks = $("a.menu-links");
+
+    mobileMenuLinks.on("click", function (){
+        $("nav").toggleClass("click-class");
+    });
 
 
     function stickyMenu(){
@@ -37,7 +43,7 @@ var Application = function(){
 
     function stickyMobileMenu(){
 
-        //sticky menu function
+        //sticky menu function for mobile devices
 
         var menu = $(".menu-button");
         var lastPositionTop = 0;
@@ -57,6 +63,9 @@ var Application = function(){
 
 
     function experienceSlider(){
+
+        //slider function for 'experience' section
+
         var images = $("li.experience-items");
         var visibleImage = 0;
 
