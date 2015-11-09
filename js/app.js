@@ -5,21 +5,22 @@ var Application = function(){
 
         //navigation for mobile devices - hamburger menu
 
+
+        var mobileMenuLinks = $("a.menu-links");
+
         if(window.matchMedia("(max-width: 800px)").matches){
             $(".desktop-button").addClass("smartphone-button").removeClass("desktop-button");
             $("nav").removeClass("desktop-view").addClass("smartphone-view").addClass("click-class");
             $("button").on("click", function(){
                 $("nav").toggleClass("click-class");
             });
+
+            mobileMenuLinks.on("click", function (){
+                $("nav").toggleClass("click-class");
+            });
+
         }
     }
-
-    var mobileMenuLinks = $("a.menu-links");
-
-    mobileMenuLinks.on("click", function (){
-        $("nav").toggleClass("click-class");
-    });
-
 
     function stickyMenu(){
 
