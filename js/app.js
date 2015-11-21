@@ -73,21 +73,23 @@ var Application = function(){
         images.eq(visibleImage).show();
 
         $(".arrow-right").click(function(){
+            event.stopPropagation();
             images.eq(visibleImage).hide();
             visibleImage++;
             if(visibleImage >= images.length){
                 visibleImage=0;
             }
-            images.eq(visibleImage).show(200);
+            images.eq(visibleImage).show();
         });
 
         $(".arrow-left").click(function(){
+            event.stopPropagation();
             images.eq(visibleImage).hide();
             visibleImage--;
             if(visibleImage < 0){
                 visibleImage=images.length-1;
             }
-            images.eq(visibleImage).show(200);
+            images.eq(visibleImage).show();
         });
     }
 
