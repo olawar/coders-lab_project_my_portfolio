@@ -73,7 +73,6 @@ var Application = function(){
         images.eq(visibleImage).show();
 
         $(".arrow-right").click(function(){
-            event.stopPropagation();
             images.eq(visibleImage).hide();
             visibleImage++;
             if(visibleImage >= images.length){
@@ -83,7 +82,6 @@ var Application = function(){
         });
 
         $(".arrow-left").click(function(){
-            event.stopPropagation();
             images.eq(visibleImage).hide();
             visibleImage--;
             if(visibleImage < 0){
